@@ -1,0 +1,8 @@
+{
+  "python.pythonPath": "~/miniconda3/envs/frc-maps/bin/python",
+  "python.terminal.activateEnvironment": true,
+  "terminal.integrated.shellArgs.linux": [
+    "-c",
+    "conda activate frc-maps && exec $SHELL"
+  ]
+}
