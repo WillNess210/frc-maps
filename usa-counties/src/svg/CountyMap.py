@@ -1,6 +1,7 @@
 from lxml import etree
 from typing import List, Callable
 from .County import County
+import os
 
 class CountyMap:
     def __init__(self, source_filepath, output_filepath):
@@ -23,6 +24,9 @@ class CountyMap:
             func(county)
 
     def save_svg(self):
+        # create folder if necessary
+        dir_name = os.path.dirname(self.output_filepath)
+        os.makedirs(dir_name, exist_ok=True)
         with open(self.output_filepath, "wb") as f:
             f.write(etree.tostring(self.svg_root))
             print("Saved to " + self.output_filepath)
