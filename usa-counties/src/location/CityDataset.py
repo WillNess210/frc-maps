@@ -25,9 +25,8 @@ class CityDataset:
             city = City(city_name, state_name, county_code)
             self.__lookup_map[key] = city
 
-    def get_county_code(self, city_name: str, state_name: str) -> Optional[City]:
+    def get_city(self, city_name: str, state_name: str) -> Optional[City]:
         key = (city_name, state_name)
         if key in self.__lookup_map:
             return self.__lookup_map[key]
-        else:
-            return None
+        return None
