@@ -8,6 +8,6 @@ class TBA:
         self.__year = year
 
     def get_teams(self) -> List[Team]:
-        tba_teams = self.__tba.teams(page=0, year=self.__year)
+        tba_teams = self.__tba.teams(year=self.__year)
         return [Team(tba_team) for tba_team in tba_teams]
     
