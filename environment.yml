@@ -2,3 +2,4 @@ name: frc-maps
 dependencies:
   - lxml
   - pandas
+  - tbapy
