@@ -2,4 +2,7 @@ name: frc-maps
 dependencies:
   - lxml
   - pandas
-  - tbapy
+  - pip
+  - pip:
+      - tbapy
+      - python-dotenv
