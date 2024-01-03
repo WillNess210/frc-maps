@@ -26,9 +26,10 @@ for team_key, county_codes in team_key_to_county_codes.items():
 # Set all counties to white by default
 county_map.for_each_county(lambda county: county.set_fill(255, 255, 255))
 # Set the fill of each county based on the number of teams in that county
-# 0 teams -> white
-# in between 0 and max = linear gradient from white to blue
-# max teams -> blue
+# 0 teams -> (255, 255, 255) (white)
+# 1 team -> (200, 200, 255) (light blue)
+# in between 1 and max = linear gradient from light blue to blue
+# max teams -> (0, 0, 255) (blue)
 max_num_teams = max([len(team_keys) for team_keys in county_code_to_team_keys_dict.values()])
 for county_code, team_keys in county_code_to_team_keys_dict.items():
     county = county_map.get_county(county_code)
@@ -39,10 +40,10 @@ for county_code, team_keys in county_code_to_team_keys_dict.items():
     g = 255
     b = 255
     if num_teams > 0:
-        r = int(255 * (1 - num_teams / max_num_teams))
-        g = int(255 * (1 - num_teams / max_num_teams))
-        b = 255
+        r = 200 + int((num_teams / max_num_teams) * 55)
+        g = 200 + int((num_teams / max_num_teams) * 55)
     county.set_fill(r, g, b)
-    title = county.get_title() + ": " + str(team_keys)
+    title = f'{county.get_title()} ({num_teams}): {", ".join(team_keys)}'
+    county.set_title(title)
 
 county_map.save_svg()
