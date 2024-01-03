@@ -5,5 +5,8 @@ class County:
     def set_fill(self, r: int, g: int, b: int):
         self.county.attrib["fill"] = "rgb(" + str(r) + "," + str(g) + "," + str(b) + ")"
 
+    def get_title(self):
+        return self.county[0].text
+
     def set_title(self, title):
         self.county[0].text = title
