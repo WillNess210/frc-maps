@@ -33,9 +33,15 @@ class CountyMap:
         if county_code not in self.county_code_to_county_dict:
             return None
         return self.county_code_to_county_dict[county_code]
+    
+    def add_hover_effect(self):
+        for county in self.__get_counties():
+            county.add_hover_effect()
+
 
     def save_svg(self):
         # create folder if necessary
+        self.add_hover_effect()
         dir_name = os.path.dirname(self.output_filepath)
         os.makedirs(dir_name, exist_ok=True)
         with open(self.output_filepath, "wb") as f:
