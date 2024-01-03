@@ -14,3 +14,4 @@ The purpose of this project is to generate geographic data visualizations for th
 
 ## Data Sources
 - In order to determine what county each team is in, we are using the following US City dataset: https://simplemaps.com/data/us-cities
+- If the city dataset does not work, the backup is this zip code dataset: https://www.kaggle.com/datasets/danofer/zipcodes-county-fips-crosswalk
