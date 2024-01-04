@@ -1,5 +1,5 @@
 import json
-from py_markdown_table.markdown_table import markdown_table
+from markdown_table_generator import generate_markdown, table_from_string_list, Alignment
 from typing import Dict, List
 from svg import CountyMap
 
@@ -50,20 +50,20 @@ county_map.save_svg()
 
 
 # Generate markdown table
-# row = {county_name: str; num_teams: int;}
 rows = []
 for county_code, team_keys in county_code_to_team_keys_dict.items():
     county = county_map.get_county(county_code)
     if county is None:
         continue
-    rows.append({
-        'county_name': county.get_name(),
-        'num_teams': len(team_keys)
-    })
-rows.sort(key=lambda row: row['num_teams'], reverse=True)
-
+    rows.append([county.get_name(), len(team_keys)])
+rows.sort(key=lambda row: row[1], reverse=True)
 rows = rows[0:NUMBER_OF_COUNTY_ROWS]
-markdown = markdown_table(rows).get_markdown()
+# prepend header row
+rows = [['County', 'Number of Teams']] + rows
+# turn every row into strings
+rows = [[str(cell) for cell in row] for row in rows]
 
+table = table_from_string_list(rows, Alignment.CENTER)
+markdown = generate_markdown(table)
 with open(f'{output_prefix}/output.md', 'w') as f:
     f.write(markdown)
