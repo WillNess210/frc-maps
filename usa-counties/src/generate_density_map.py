@@ -1,16 +1,19 @@
 import json
+from py_markdown_table.markdown_table import markdown_table
 from typing import Dict, List
 from svg import CountyMap
 
 YEAR = 2024
+output_prefix = f'output/density_map/{YEAR}'
 team_key_to_county_codes_filepath = f'./output/team_locations/{YEAR}/team_key_to_county_codes.json'
+NUMBER_OF_COUNTY_ROWS = 10
 
 # Load the team_key_to_county_codes from a file
 team_key_to_county_codes: Dict[str, List[str]] = {}
 with open(team_key_to_county_codes_filepath, 'r') as f:
     team_key_to_county_codes = json.load(f)
 
-county_map = CountyMap("../assets/usa_counties.svg", f'output/density_map/{YEAR}/output.svg')
+county_map = CountyMap("../assets/usa_counties.svg", f'{output_prefix}/output.svg')
 county_code_to_team_keys_dict: Dict[str, List[str]] = {}
 for team_key, county_codes in team_key_to_county_codes.items():
     for county_code in county_codes:
@@ -44,3 +47,23 @@ for county_code, team_keys in county_code_to_team_keys_dict.items():
     county.set_title(title)
 
 county_map.save_svg()
+
+
+# Generate markdown table
+# row = {county_name: str; num_teams: int;}
+rows = []
+for county_code, team_keys in county_code_to_team_keys_dict.items():
+    county = county_map.get_county(county_code)
+    if county is None:
+        continue
+    rows.append({
+        'county_name': county.get_name(),
+        'num_teams': len(team_keys)
+    })
+rows.sort(key=lambda row: row['num_teams'], reverse=True)
+
+rows = rows[0:NUMBER_OF_COUNTY_ROWS]
+markdown = markdown_table(rows).get_markdown()
+
+with open(f'{output_prefix}/output.md', 'w') as f:
+    f.write(markdown)

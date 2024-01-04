@@ -6,3 +6,4 @@ dependencies:
   - pip:
       - tbapy
       - python-dotenv
+      - py-markdown-table
