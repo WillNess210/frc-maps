@@ -8,6 +8,7 @@ class Event:
         self.__key = tba_event.key
         self.__state = tba_event.state_prov
         self.__zipcode = tba_event.postal_code
+        self.__event_type = tba_event.event_type_string
 
     def get_city(self):
         return self.__city
@@ -23,6 +24,9 @@ class Event:
     
     def get_zipcode(self):
         return self.__zipcode
+    
+    def get_event_type(self):
+        return self.__event_type
     
     def is_usa_event(self):
         return self.__country == USA_COUNTRY

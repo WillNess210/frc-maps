@@ -3,6 +3,8 @@ from typing import List
 from .Team import Team
 from .Event import Event
 
+EVENT_TYPES_TO_IGNORE = ["Offseason", "Preseason", "Remote", "--"]
+
 class TBA:
     def __init__(self, tba_key, year):
         self.__tba = tbapy.TBA(tba_key)
@@ -14,4 +16,5 @@ class TBA:
     
     def get_events(self):
         tba_events = self.__tba.events(year=self.__year)
-        return [Event(tba_event) for tba_event in tba_events]
+        events = [Event(tba_event) for tba_event in tba_events]
+        return list(filter(lambda event: event.get_event_type() not in EVENT_TYPES_TO_IGNORE, events))
