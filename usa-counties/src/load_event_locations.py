@@ -9,12 +9,12 @@ YEAR = 2024
 
 env = Environment()
 TBA_KEY = env.get_tba_key()
-TBA = TBA(TBA_KEY, YEAR)
+tba = TBA(TBA_KEY, YEAR)
 
 county_code_fetcher: CountyCodeFetcher = LocationFactory().get_county_code_fetcher()
 
 print(f'Fetching all events from TBA for {YEAR}')
-events = TBA.get_events()
+events = tba.get_events()
 not_found_events = []
 event_key_to_county_codes: Dict[str, List[str]] = {}
 for event in events:

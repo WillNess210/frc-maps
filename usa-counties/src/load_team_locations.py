@@ -9,12 +9,12 @@ YEAR = 2024
 
 env = Environment()
 TBA_KEY = env.get_tba_key()
-TBA = TBA(TBA_KEY, YEAR)
+tba = TBA(TBA_KEY, YEAR)
 
 county_code_fetcher: CountyCodeFetcher = LocationFactory().get_county_code_fetcher()
 
 print(f'Fetching all teams from TBA for {YEAR}')
-teams = TBA.get_teams()
+teams = tba.get_teams()
 team_key_to_county_codes: Dict[str, List[str]] = {}
 for team in teams:
     if not team.is_in_usa():
