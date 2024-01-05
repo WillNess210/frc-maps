@@ -6,7 +6,6 @@ from svg import CountyMap
 YEAR = 2024
 output_prefix = f'output/density_map/{YEAR}'
 team_key_to_county_codes_filepath = f'./output/team_locations/{YEAR}/team_key_to_county_codes.json'
-NUMBER_OF_COUNTY_ROWS = 10
 
 # Load the team_key_to_county_codes from a file
 team_key_to_county_codes: Dict[str, List[str]] = {}
@@ -57,7 +56,7 @@ for county_code, team_keys in county_code_to_team_keys_dict.items():
         continue
     rows.append([county.get_name(), len(team_keys)])
 rows.sort(key=lambda row: row[1], reverse=True)
-rows = rows[0:NUMBER_OF_COUNTY_ROWS]
+
 # prepend header row
 rows = [['County', 'Number of Teams']] + rows
 # turn every row into strings
