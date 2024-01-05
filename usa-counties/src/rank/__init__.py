@@ -1,1 +1,2 @@
 from .calculate_rank import calculate_rank, DataWithRank
+from .ranked_table import generate_ranked_county_table
