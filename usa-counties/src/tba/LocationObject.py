@@ -2,33 +2,35 @@ USA_COUNTRY = "USA"
 
 # common class for TBA response types that have a location
 class LocationObject:
-    def __init__(self, tba_team):
+    def __init__(self, tba_team, object_type: str):
         self.__city = tba_team.city
         self.__country = tba_team.country
         self.__key = tba_team.key
         self.__state = tba_team.state_prov
         self.__zipcode = tba_team.postal_code
 
-    def get_city(self):
+        self.__object_type = object_type
+
+    def get_city(self) -> str:
         return self.__city
     
-    def get_country(self):
+    def get_country(self) -> str:
         return self.__country
     
-    def get_key(self):
+    def get_key(self) -> str:
         return self.__key
     
-    def get_state(self):
+    def get_state(self) -> str:
         return self.__state
     
-    def get_zipcode(self):
+    def get_zipcode(self) -> str:
         return self.__zipcode
     
-    def is_in_usa(self):
+    def get_object_type(self) -> str:
+        return self.__object_type
+    
+    def is_in_usa(self) -> bool:
         return self.__country == USA_COUNTRY
     
-    def __str__(self):
-        return buildLocationObjectString("LocationObject")
-    
-def buildLocationObjectString(locationObject: LocationObject, object_type: str) -> str:
-    return f'{locationObject.get_key()} {object_type}({locationObject.get_city()}, {locationObject.get_state()}, {locationObject.get_zipcode()}, {locationObject.get_country()})'
+    def __str__(self) -> str:
+        return f'{self.__object_type}({self.__key})({self.__city}, {self.__state}, {self.__zipcode}, {self.__country})'
