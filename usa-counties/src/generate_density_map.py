@@ -27,8 +27,8 @@ for team_key, county_codes in team_key_to_county_codes.items():
 
 # Set all counties to white by default
 county_map.for_each_county(lambda county: county.set_fill(255, 255, 255))
-# Set the fill of each county based on the number of teams in that county
 
+# Set the fill of each county based on the number of teams in that county
 max_num_teams = max([len(team_keys) for team_keys in county_code_to_team_keys_dict.values()])
 for county_code, team_keys in county_code_to_team_keys_dict.items():
     county = county_map.get_county(county_code)
