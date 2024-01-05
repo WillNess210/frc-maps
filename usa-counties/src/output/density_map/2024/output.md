@@ -1,847 +1,847 @@
-|        County        | Number of Teams |
-|:--------------------:|:---------------:|
-|      Wayne, MI       |       85        |
-|   Los Angeles, CA    |       65        |
-|     Oakland, MI      |       50        |
-|       King, WA       |       45        |
-|   Santa Clara, CA    |       42        |
-|      Harris, TX      |       42        |
-|    San Diego, CA     |       37        |
-|     Hennepin, MN     |       30        |
-|     Genesee, MI      |       29        |
-|     Maricopa, AZ     |       29        |
-|     Suffolk, NY      |       27        |
-|      Queens, NY      |       26        |
-|    Middlesex, MA     |       25        |
-|      Macomb, MI      |       24        |
-|      Orange, CA      |       23        |
-|       Kent, MI       |       22        |
-|      Fulton, GA      |       22        |
-|     Jackson, MO      |       21        |
-|       Cook, IL       |       20        |
-|      Clark, NV       |       20        |
-|    Washtenaw, MI     |       19        |
-|       Wake, NC       |       19        |
-|      Ramsey, MN      |       19        |
-|      Nassau, NY      |       18        |
-|      Monroe, NY      |       17        |
-|     Honolulu, HI     |       17        |
-|      Bexar, TX       |       17        |
-|      Dallas, TX      |       17        |
-|     Hartford, CT     |       16        |
-|      Collin, TX      |       16        |
-|      Travis, TX      |       15        |
-|    Milwaukee, WI     |       15        |
-|    Worcester, MA     |       14        |
-|   Hillsborough, NH   |       14        |
-|    St. Louis, MO     |       14        |
-|      Ingham, MI      |       14        |
-|    Salt Lake, UT     |       14        |
-|    San Mateo, CA     |       13        |
-|     Cuyahoga, OH     |       13        |
-|    Montgomery, PA    |       13        |
-|     Alameda, CA      |       13        |
-|     Somerset, NJ     |       12        |
-|      Essex, NJ       |       12        |
-|   Contra Costa, CA   |       12        |
-|      Dakota, MN      |       12        |
-|     Saginaw, MI      |       12        |
-|    Allegheny, PA     |       11        |
-|     Waukesha, WI     |       11        |
-|     Ventura, CA      |       11        |
-|     Gwinnett, GA     |       11        |
-|     Berrien, MI      |       11        |
-|     Jackson, MI      |       11        |
-|     Hidalgo, TX      |       11        |
-|  San Francisco, CA   |       11        |
-|     Norfolk, MA      |       10        |
-|      Ottawa, MI      |       10        |
-|    Burlington, NJ    |       10        |
-|      Monroe, MI      |       10        |
-|      Mercer, NJ      |       10        |
-|      Kings, NY       |       10        |
-|    Washington, DC    |       10        |
-|      Orange, FL      |       10        |
-|    Kalamazoo, MI     |       10        |
-|    Middlesex, NJ     |        9        |
-|      Tulsa, OK       |        9        |
-|     Franklin, OH     |        9        |
-|    New_Haven, CT     |        9        |
-|      Pierce, WA      |        9        |
-|     Johnson, KS      |        9        |
-|      Denver, CO      |        9        |
-|       Knox, TN       |        9        |
-|     Monterey, CA     |        9        |
-|     Muskegon, MI     |        9        |
-|    St. Louis, MN     |        9        |
-|    St. Clair, MI     |        9        |
-|      Morris, NJ      |        8        |
-|    Miami-Dade, FL    |        8        |
-|   Fairfax Co., VA    |        8        |
-|    St. Joseph, IN    |        8        |
-|    Palm Beach, FL    |        8        |
-|    New_London, CT    |        8        |
-|    Fairfield, CT     |        8        |
-|    Merrimack, NH     |        8        |
-|    Multnomah, OR     |        8        |
-|     Oklahoma, OK     |        8        |
-|     Arapahoe, CO     |        8        |
-|    Washington, MN    |        8        |
-|    Livingston, MI    |        8        |
-|     Calhoun, MI      |        8        |
-|    Shiawassee, MI    |        8        |
-|       Bay, MI        |        8        |
-|     Broward, FL      |        7        |
-|      Marion, IN      |        7        |
-|      Bronx, NY       |        7        |
-|    Montgomery, MD    |        7        |
-|      Essex, MA       |        7        |
-|    Snohomish, WA     |        7        |
-|      Anoka, MN       |        7        |
-|    Hillsdale, MI     |        7        |
-|      Albany, NY      |        6        |
-|     Brevard, FL      |        6        |
-|    Cumberland, ME    |        6        |
-|   Philadelphia, PA   |        6        |
-|     Delaware, PA     |        6        |
-|     Chester, PA      |        6        |
-|      Fresno, CA      |        6        |
-|     Ontario, NY      |        6        |
-|       Ada, ID        |        6        |
-|     Allegan, MI      |        6        |
-|   Westchester, NY    |        6        |
-|      Carver, MN      |        6        |
-|      Wright, MN      |        6        |
-|     Lenawee, MI      |        6        |
-|     Stearns, MN      |        6        |
-|    Van Buren, MI     |        6        |
-|     Rockland, NY     |        6        |
-|     Plymouth, MA     |        5        |
-|      Bucks, PA       |        5        |
-|     Suffolk, MA      |        5        |
-|       York, ME       |        5        |
-|     Larimer, CO      |        5        |
-|     Tolland, CT      |        5        |
-|      Camden, NJ      |        5        |
-|     Passaic, NJ      |        5        |
-|    Greenville, SC    |        5        |
-|    Strafford, NH     |        5        |
-|     Richmond, VA     |        5        |
-|      Orange, NC      |        5        |
-|     El Paso, CO      |        5        |
-|     Hampden, MA      |        5        |
-|       Pima, AZ       |        5        |
-|    Rockingham, NH    |        5        |
-|   Anne Arundel, MD   |        5        |
-|    Clackamas, OR     |        5        |
-|     Spokane, WA      |        5        |
-|     Forsyth, GA      |        5        |
-|       Clay, MO       |        5        |
-|    Wyandotte, KS     |        5        |
-|    Sacramento, CA    |        5        |
-|      Clark, WA       |        5        |
-|     Midland, MI      |        5        |
-|       Cass, MN       |        5        |
-|    Manitowoc, WI     |        5        |
-|     Tarrant, TX      |        5        |
-|    La Crosse, WI     |        5        |
-|     Orleans, LA      |        5        |
-|     Tuscola, MI      |        5        |
-|    Menominee, MI     |        5        |
-|    Bernalillo, NM    |        5        |
-|     Trumbull, OH     |        4        |
-|      Butler, OH      |        4        |
-|    Tippecanoe, IN    |        4        |
-|    Frederick, MD     |        4        |
-|      Benton, OR      |        4        |
-|     Houghton, MI     |        4        |
-|     Hamilton, IN     |        4        |
-|      Howard, MD      |        4        |
-|      Durham, NC      |        4        |
-|       Cobb, GA       |        4        |
-|   St. Charles, MO    |        4        |
-|     Richland, SC     |        4        |
-|   Hillsborough, FL   |        4        |
-|     Hanover, VA      |        4        |
-|       Lake, FL       |        4        |
-|     Boulder, CO      |        4        |
-|      Bergen, NJ      |        4        |
-|      Lapeer, MI      |        4        |
-|  Grand Traverse, MI  |        4        |
-|     Monmouth, NJ     |        4        |
-|   St. Tammany, LA    |        4        |
-|     Imperial, CA     |        4        |
-|      Scott, MN       |        4        |
-|     Okaloosa, FL     |        4        |
-|     Kennebec, ME     |        4        |
-|  Santa Barbara, CA   |        4        |
-|   Mecklenburg, NC    |        4        |
-|      Delta, MI       |        4        |
-|     Goodhue, MN      |        4        |
-|     Beltrami, MN     |        4        |
-|    Dougherty, GA     |        4        |
-|      Oceana, MI      |        4        |
-|     Lubbock, TX      |        4        |
-|      Shelby, TN      |        4        |
-|      Antrim, MI      |        4        |
-|     Wexford, MI      |        4        |
-|     Isabella, MI     |        4        |
-|     Carlton, MN      |        4        |
-|      Sonoma, CA      |        4        |
-|      Mason, MI       |        4        |
-|    Dickinson, MI     |        4        |
-|      Howard, IN      |        3        |
-|       Lake, IN       |        3        |
-|      Warren, NJ      |        3        |
-|    Litchfield, CT    |        3        |
-|     Belknap, NH      |        3        |
-|     Fauquier, VA     |        3        |
-|     Harrison, MS     |        3        |
-|       Erie, NY       |        3        |
-|    Black Hawk, IA    |        3        |
-|     Henrico, VA      |        3        |
-|    Arlington, VA     |        3        |
-|    Alexandria, VA    |        3        |
-|    Deschutes, OR     |        3        |
-|      Hawaii, HI      |        3        |
-|     Madison, IL      |        3        |
-|    St. Clair, IL     |        3        |
-|    Providence, RI    |        3        |
-|     Guilford, NC     |        3        |
-|     Chippewa, MI     |        3        |
-|    Winnebago, IL     |        3        |
-|    Middlesex, CT     |        3        |
-|      Brown, WI       |        3        |
-|  Baltimore City, MD  |        3        |
-|  Baltimore Co., MD   |        3        |
-|      Peoria, IL      |        3        |
-|     Newaygo, MI      |        3        |
-|    Eau Claire, WI    |        3        |
-|     Carroll, MD      |        3        |
-|      Otsego, MI      |        3        |
-|      Creek, OK       |        3        |
-|  St. Louis Co., MO   |        3        |
-|       Maui, HI       |        3        |
-|    Crow Wing, MN     |        3        |
-|      Meeker, MN      |        3        |
-|     Renville, MN     |        3        |
-|      Canyon, ID      |        3        |
-|      Roseau, MN      |        3        |
-|      DuPage, IL      |        3        |
-|      Martin, MN      |        3        |
-|     Madison, AL      |        3        |
-|     Houston, MN      |        3        |
-|    Sherburne, MN     |        3        |
-|    Montgomery, OH    |        3        |
-|    Hendricks, IN     |        3        |
-|      Becker, MN      |        3        |
-|  San Bernardino, CA  |        3        |
-|      Hudson, NJ      |        3        |
-|     Osceola, MI      |        3        |
-| East Baton Rouge, LA |        3        |
-|      Emmet, MI       |        3        |
-|       Hays, TX       |        3        |
-|     Muskogee, OK     |        3        |
-|       Cass, MI       |        3        |
-|    Fort Bend, TX     |        3        |
-|    Marquette, MI     |        3        |
-|    Charlevoix, MI    |        3        |
-| Prince George's, MD  |        3        |
-|     Morrison, MN     |        3        |
-|    Washington, OR    |        3        |
-|      Pasco, FL       |        3        |
-|      Allen, IN       |        3        |
-|     Mackinac, MI     |        3        |
-|      Comal, TX       |        3        |
-|     Mecosta, MI      |        3        |
-|      Ionia, MI       |        3        |
-|     Brazoria, TX     |        3        |
-|    St. Joseph, MI    |        3        |
-|      Iosco, MI       |        3        |
-|     Johnston, NC     |        3        |
-|    Iberville, LA     |        3        |
-|     Sanilac, MI      |        3        |
-|     Gogebic, MI      |        3        |
-|      Ulster, NY      |        3        |
-|      Clare, MI       |        3        |
-|     Grafton, NH      |        3        |
-|    Jefferson, AL     |        3        |
-|     Gratiot, MI      |        3        |
-|     Saratoga, NY     |        2        |
-|    Limestone, AL     |        2        |
-|     Pinellas, FL     |        2        |
-|      Duval, FL       |        2        |
-|     Bristol, MA      |        2        |
-|    Outagamie, WI     |        2        |
-|     Windsor, VT      |        2        |
-|     Hampton, VA      |        2        |
-|    Galveston, TX     |        2        |
-|    Charleston, SC    |        2        |
-|     Niagara, NY      |        2        |
-|      Lucas, OH       |        2        |
-|    Goochland, VA     |        2        |
-|      Solano, CA      |        2        |
-|   Grand Forks, ND    |        2        |
-|       Linn, OR       |        2        |
-|       Linn, IA       |        2        |
-| San Luis Obispo, CA  |        2        |
-|    Washington, WI    |        2        |
-|      Wayne, NY       |        2        |
-|      Union, NJ       |        2        |
-|      Horry, SC       |        2        |
-|     Rockwall, TX     |        2        |
-|       Mesa, CO       |        2        |
-|   Falls Church, VA   |        2        |
-|    Montgomery, TX    |        2        |
-|     Elkhart, IN      |        2        |
-|   San Joaquin, CA    |        2        |
-|       Yolo, CA       |        2        |
-|      Grant, IN       |        2        |
-|     Cochise, AZ      |        2        |
-|     Cheshire, NH     |        2        |
-|      Caddo, LA       |        2        |
-|  Prince William, VA  |        2        |
-|     Manassas, VA     |        2        |
-|       Cass, MO       |        2        |
-|       Kane, IL       |        2        |
-|     Douglas, CO      |        2        |
-|    Jefferson, CO     |        2        |
-|   St. Charles, LA    |        2        |
-|   Fond du Lac, WI    |        2        |
-|       Erie, OH       |        2        |
-|     Kendall, IL      |        2        |
-|   Pottawatomie, OK   |        2        |
-|       Lake, IL       |        2        |
-|      Caddo, OK       |        2        |
-|     Tazewell, IL     |        2        |
-|       Lyon, MN       |        2        |
-|     Olmsted, MN      |        2        |
-|     Angelina, TX     |        2        |
-|      Yakima, WA      |        2        |
-|      Marion, OR      |        2        |
-|      Kitsap, WA      |        2        |
-|      Sussex, NJ      |        2        |
-|      Mayes, OK       |        2        |
-|     Mahoning, OH     |        2        |
-|     Iredell, NC      |        2        |
-|      Marion, FL      |        2        |
-|       Lake, MN       |        2        |
-|    Kandiyohi, MN     |        2        |
-|    Otter Tail, MN    |        2        |
-|       Utah, UT       |        2        |
-|    Sheboygan, WI     |        2        |
-|    Dorchester, SC    |        2        |
-|      Monroe, IN      |        2        |
-|    Lafayette, LA     |        2        |
-|     Sarasota, FL     |        2        |
-|     Clatsop, OR      |        2        |
-|     Leelanau, MI     |        2        |
-|       Rice, MN       |        2        |
-|      Union, OR       |        2        |
-|     Chatham, NC      |        2        |
-|     LaPorte, IN      |        2        |
-|      White, AR       |        2        |
-|      DeKalb, GA      |        2        |
-|     Hamilton, OH     |        2        |
-|     Whitman, WA      |        2        |
-|     Alachua, FL      |        2        |
-|     Umatilla, OR     |        2        |
-|     Columbia, OR     |        2        |
-|     Delaware, OH     |        2        |
-|   Westmoreland, PA   |        2        |
-|     Jackson, GA      |        2        |
-|      Denton, TX      |        2        |
-|     Anderson, TN     |        2        |
-|     Johnson, MO      |        2        |
-|      Pettis, MO      |        2        |
-|   New_Hanover, NC    |        2        |
-|     Bastrop, TX      |        2        |
-|      Ellis, TX       |        2        |
-|       Polk, IA       |        2        |
-|     Chatham, GA      |        2        |
-|     Carroll, NH      |        2        |
-|     Stevens, WA      |        2        |
-|    Riverside, CA     |        2        |
-|    Williamson, TX    |        2        |
-|      Itasca, MN      |        2        |
-|     Clinton, MI      |        2        |
-|     Loudoun, VA      |        2        |
-|      Isanti, MN      |        2        |
-|      Washoe, NV      |        2        |
-|   Northampton, PA    |        2        |
-|    Jefferson, KY     |        2        |
-|   Presque Isle, MI   |        2        |
-|      Ogemaw, MI      |        2        |
-|      Otero, NM       |        2        |
-|  Lac qui Parle, MN   |        2        |
-|      Eaton, MI       |        2        |
-|    Rutherford, NC    |        2        |
-| West Baton Rouge, LA |        2        |
-|    Whitfield, GA     |        2        |
-|    Jefferson, LA     |        2        |
-|     Manistee, MI     |        2        |
-|      Alger, MI       |        2        |
-|     Kalkaska, MI     |        2        |
-|       Leon, FL       |        2        |
-|      Essex, NY       |        2        |
-|      Scott, IA       |        2        |
-|     Windham, CT      |        2        |
-|    Twin Falls, ID    |        2        |
-|    Brunswick, NC     |        2        |
-|     Gladwin, MI      |        2        |
-|    Ontonagon, MI     |        2        |
-|      Racine, WI      |        2        |
-|      Tulare, CA      |        2        |
-|      Merced, CA      |        2        |
-|     Licking, OH      |        2        |
-|       Napa, CA       |        2        |
-|    Georgetown, SC    |        2        |
-|     Montcalm, MI     |        2        |
-|   Vanderburgh, IN    |        2        |
-|      Pinal, AZ       |        2        |
-|       Iron, MI       |        2        |
-|     Daviess, IN      |        2        |
-|     Fairfax, VA      |        2        |
-|     Cameron, TX      |        2        |
-|     Cape May, NJ     |        2        |
-|      Summit, OH      |        2        |
-|    St. Johns, FL     |        2        |
-|      Grant, MN       |        2        |
-|      Oxford, ME      |        2        |
-|     Victoria, TX     |        2        |
-|       Hall, GA       |        2        |
-|      Baxter, AR      |        1        |
-|      Mohave, AZ      |        1        |
-|     Newport, RI      |        1        |
-|       Hunt, TX       |        1        |
-|     Johnson, IA      |        1        |
-|      Grant, WI       |        1        |
-|      Martin, FL      |        1        |
-|     Wyoming, PA      |        1        |
-|   St. Lawrence, NY   |        1        |
-|       Erie, PA       |        1        |
-|      Salem, NJ       |        1        |
-|     Crawford, AR     |        1        |
-|     Stafford, VA     |        1        |
-|      Oconee, SC      |        1        |
-|    New_Castle, DE    |        1        |
-|    Montgomery, VA    |        1        |
-|    Petersburg, VA    |        1        |
-|     Madison, IN      |        1        |
-|      Warren, MS      |        1        |
-|     Lincoln, TN      |        1        |
-|     Campbell, KY     |        1        |
-|    Anchorage, AK     |        1        |
-|      Kemper, MS      |        1        |
-|      Leake, MS       |        1        |
-|     Neshoba, MS      |        1        |
-|     Winston, MS      |        1        |
-| Charlottesville, VA  |        1        |
-|     Tompkins, NY     |        1        |
-|   Rock Island, IL    |        1        |
-|      Lehigh, PA      |        1        |
-|    St. Mary's, MD    |        1        |
-|      Steele, ND      |        1        |
-|      Towner, ND      |        1        |
-|      Harvey, KS      |        1        |
-|     Halifax, VA      |        1        |
-|      Warren, OH      |        1        |
-|      Marion, SC      |        1        |
-|      Aiken, SC       |        1        |
-|      Miami, KS       |        1        |
-|    Lackawanna, PA    |        1        |
-|     Doña Ana, NM     |        1        |
-|    Henderson, NC     |        1        |
-|   Martinsville, VA   |        1        |
-|     Natrona, WY      |        1        |
-|       Dane, WI       |        1        |
-|      Madera, CA      |        1        |
-|   Pearl River, MS    |        1        |
-|    Huntington, IN    |        1        |
-|       York, SC       |        1        |
-|    Bonneville, ID    |        1        |
-|     Bannock, ID      |        1        |
-|     Franklin, VA     |        1        |
-|     Garrett, MD      |        1        |
-|     Johnson, IN      |        1        |
-|     Collier, FL      |        1        |
-|     Florence, SC     |        1        |
-|     Norfolk, VA      |        1        |
-|   Northampton, VA    |        1        |
-|      Broome, NY      |        1        |
-|      Tioga, NY       |        1        |
-|    Tangipahoa, LA    |        1        |
-|     Boundary, ID     |        1        |
-|     Volusia, FL      |        1        |
-|    Washington, OK    |        1        |
-|     Forrest, MS      |        1        |
-|   Montmorency, MI    |        1        |
-|     Pontotoc, OK     |        1        |
-|   Newport News, VA   |        1        |
-|     Rutland, VT      |        1        |
-|      Kauai, HI       |        1        |
-|     Coconino, AZ     |        1        |
-|      McLeod, MN      |        1        |
-|       Lane, OR       |        1        |
-|    Caledonia, VT     |        1        |
-|     Stevens, MN      |        1        |
-|     Lebanon, PA      |        1        |
-|      Marin, CA       |        1        |
-|     Dauphin, PA      |        1        |
-|      Medina, OH      |        1        |
-|    Culberson, TX     |        1        |
-|    Monongalia, WV    |        1        |
-|    Rockingham, NC    |        1        |
-|       Pitt, NC       |        1        |
-|       Luna, NM       |        1        |
-|      Oldham, KY      |        1        |
-|    Winnebago, WI     |        1        |
-|     Fayette, KY      |        1        |
-|     Wabasha, MN      |        1        |
-|    Chesapeake, VA    |        1        |
-|      Fulton, IN      |        1        |
-|     McLennan, TX     |        1        |
-|      Island, WA      |        1        |
-|      Clarke, VA      |        1        |
-|     Le Sueur, MN     |        1        |
-|     Nicollet, MN     |        1        |
-|     Jackson, OR      |        1        |
-|      Nueces, TX      |        1        |
-|     Chisago, MN      |        1        |
-|      Mower, MN       |        1        |
-|      Winona, MN      |        1        |
-|     Hubbard, MN      |        1        |
-|      Brown, MN       |        1        |
-|     Calhoun, AL      |        1        |
-|     Delaware, OK     |        1        |
-|     Okmulgee, OK     |        1        |
-|      Saline, KS      |        1        |
-|    El Dorado, CA     |        1        |
-|     Ozaukee, WI      |        1        |
-|     Chippewa, MN     |        1        |
-|     Missoula, MT     |        1        |
-|      Placer, CA      |        1        |
-|    Pennington, MN    |        1        |
-|      Camden, MO      |        1        |
-|     Sublette, WY     |        1        |
-|    Pipestone, MN     |        1        |
-|    Big Stone, MN     |        1        |
-|     Douglas, MN      |        1        |
-|      Camden, GA      |        1        |
-|      Onslow, NC      |        1        |
-|     Fayette, GA      |        1        |
-|      Boone, IL       |        1        |
-|    Portsmouth, VA    |        1        |
-|     Augusta, VA      |        1        |
-|      Teton, WY       |        1        |
-|     Canadian, OK     |        1        |
-|     Ouachita, LA     |        1        |
-|      Union, OH       |        1        |
-|      Putnam, WV      |        1        |
-|    Cheboygan, MI     |        1        |
-|      Dubois, IN      |        1        |
-|     Houston, GA      |        1        |
-|    Hunterdon, NJ     |        1        |
-|       Rock, WI       |        1        |
-|     Fillmore, MN     |        1        |
-|      Wayne, NC       |        1        |
-|      Benton, MN      |        1        |
-|       Bell, TX       |        1        |
-|      Allen, OH       |        1        |
-|      Boone, MO       |        1        |
-|     Chemung, NY      |        1        |
-|      Kenton, KY      |        1        |
-|       Pike, KY       |        1        |
-|     Clallam, WA      |        1        |
-|     Calloway, KY     |        1        |
-|      Nobles, MN      |        1        |
-|      Story, IA       |        1        |
-|      Grady, OK       |        1        |
-|    Botetourt, VA     |        1        |
-|     Hancock, IN      |        1        |
-|     Venango, PA      |        1        |
-|      Morgan, AL      |        1        |
-|    Washington, TN    |        1        |
-|       Pike, IN       |        1        |
-|     Richmond, NY     |        1        |
-|     Sullivan, TN     |        1        |
-|      Centre, PA      |        1        |
-|     Yamhill, OR      |        1        |
-|     Franklin, PA     |        1        |
-|      Lewis, WA       |        1        |
-|    Val Verde, TX     |        1        |
-|     Orleans, NY      |        1        |
-|    Champaign, IL     |        1        |
-|      Stark, OH       |        1        |
-|    Stanislaus, CA    |        1        |
-|     Woodford, IL     |        1        |
-|    Los Alamos, NM    |        1        |
-|     Kanabec, MN      |        1        |
-|      Skagit, WA      |        1        |
-|      Teton, ID       |        1        |
-|     Escambia, FL     |        1        |
-|    Jefferson, IL     |        1        |
-|     Muscogee, GA     |        1        |
-|      McLean, IL      |        1        |
-|     McKinley, NM     |        1        |
-|    Faribault, MN     |        1        |
-|      Wayne, PA       |        1        |
-|    Williamson, TN    |        1        |
-|     Sangamon, IL     |        1        |
-|      Tooele, UT      |        1        |
-|       Clay, MN       |        1        |
-|      Erath, TX       |        1        |
-|     Thurston, WA     |        1        |
-|     Douglas, GA      |        1        |
-|      Roane, TN       |        1        |
-|    Washington, PA    |        1        |
-|      Blount, TN      |        1        |
-|    Penobscot, ME     |        1        |
-|    Pennington, SD    |        1        |
-|      Steele, MN      |        1        |
-|      Butte, CA       |        1        |
-|     Cowlitz, WA      |        1        |
-|      Wadena, MN      |        1        |
-|     Redwood, MN      |        1        |
-|       Linn, MO       |        1        |
-|   Schoolcraft, MI    |        1        |
-|    Jefferson, WA     |        1        |
-|   Bartholomew, IN    |        1        |
-|     Hamilton, TN     |        1        |
-|      Cedar, IA       |        1        |
-|       Gila, AZ       |        1        |
-|   St. Francois, MO   |        1        |
-|     Douglas, KS      |        1        |
-|      Platte, MO      |        1        |
-|     Callaway, MO     |        1        |
-|       Vigo, IN       |        1        |
-|      Barry, MI       |        1        |
-|      Mason, WA       |        1        |
-|       Cass, IN       |        1        |
-|     Richland, OH     |        1        |
-|      Logan, AR       |        1        |
-|      Benton, AR      |        1        |
-|      Arenac, MI      |        1        |
-|      Alpena, MI      |        1        |
-|      Alcona, MI      |        1        |
-|    Dickinson, IA     |        1        |
-|     Marshall, MN     |        1        |
-|     Forsyth, NC      |        1        |
-|       Luce, MI       |        1        |
-|       Pine, MN       |        1        |
-|      Walton, FL      |        1        |
-|      Salem, VA       |        1        |
-|      Butler, PA      |        1        |
-|       Lea, NM        |        1        |
-|     Chippewa, WI     |        1        |
-|     Kankakee, IL     |        1        |
-|     Calhoun, GA      |        1        |
-|      Vernon, WI      |        1        |
-|      DeKalb, IL      |        1        |
-|    Poweshiek, IA     |        1        |
-|    Lunenburg, VA     |        1        |
-|      Riley, KS       |        1        |
-|   Independence, AR   |        1        |
-|       Kern, CA       |        1        |
-|    Sunflower, MS     |        1        |
-|     Crawford, MI     |        1        |
-|     Franklin, ME     |        1        |
-|     Somerset, ME     |        1        |
-|   Williamsburg, SC   |        1        |
-|      Fulton, OH      |        1        |
-|    Hempstead, AR     |        1        |
-|      Amelia, VA      |        1        |
-|    Cumberland, VA    |        1        |
-|      Bureau, IL      |        1        |
-|      Warren, NC      |        1        |
-|      Greene, TN      |        1        |
-|     Calumet, WI      |        1        |
-|       Clay, FL       |        1        |
-|     Hancock, ME      |        1        |
-|     Gallatin, MT     |        1        |
-|    Muscatine, IA     |        1        |
-|     Warrick, IN      |        1        |
-|     Seminole, FL     |        1        |
-|      Baraga, MI      |        1        |
-|     Walworth, WI     |        1        |
-|      Miller, AR      |        1        |
-|     Columbia, NY     |        1        |
-|      Swift, MN       |        1        |
-|     Catawba, NC      |        1        |
-|    Whiteside, IL     |        1        |
-|      Murray, GA      |        1        |
-|    Berkshire, MA     |        1        |
-|     Robeson, NC      |        1        |
-|       Rusk, WI       |        1        |
-|       Lee, FL        |        1        |
-|      Dodge, MN       |        1        |
-|     Sullivan, NH     |        1        |
-|     Grayson, TX      |        1        |
-|     Tazewell, VA     |        1        |
-|     Douglas, NE      |        1        |
-|     Garfield, OK     |        1        |
-|      Phelps, MO      |        1        |
-|    Hood River, OR    |        1        |
-|  Fredericksburg, VA  |        1        |
-|    San Benito, CA    |        1        |
-|     Caldwell, NC     |        1        |
-|      Gaston, NC      |        1        |
-|    Santa Cruz, AZ    |        1        |
-|     Jackson, NC      |        1        |
-|      Orange, VT      |        1        |
-|      Greene, OH      |        1        |
-|   Spartanburg, SC    |        1        |
-|   Trempealeau, WI    |        1        |
-|   Schenectady, NY    |        1        |
-|       Cass, ND       |        1        |
-|   Leavenworth, KS    |        1        |
-|       Lee, AL        |        1        |
-|     Hancock, MS      |        1        |
-|    Jefferson, MO     |        1        |
-|    Somervell, TX     |        1        |
-|      White, IN       |        1        |
-|   Mississippi, MO    |        1        |
-|      Chaves, NM      |        1        |
-|   Buena Vista, IA    |        1        |
-|       Knox, IL       |        1        |
-|      DeKalb, AL      |        1        |
-|    Cumberland, NC    |        1        |
-|    Cleveland, OK     |        1        |
-|      Worth, GA       |        1        |
-|      Elbert, CO      |        1        |
-|      Fulton, AR      |        1        |
-|      Moffat, CO      |        1        |
-|      Putnam, NY      |        1        |
-|       Wood, WV       |        1        |
-|     Davidson, TN     |        1        |
-|     Dubuque, IA      |        1        |
-|    Blue Earth, MN    |        1        |
-|     Stutsman, ND     |        1        |
-|     Laclede, MO      |        1        |
-|     Franklin, NC     |        1        |
-|     McDuffie, GA     |        1        |
-|     Harford, MD      |        1        |
-|    Livingston, IL    |        1        |
-|      Lorain, OH      |        1        |
-|      Owyhee, ID      |        1        |
-|       Coos, NH       |        1        |
-|   Androscoggin, ME   |        1        |
-|      Monroe, WI      |        1        |
-|     Lincoln, NC      |        1        |
-|    Missaukee, MI     |        1        |
-|    Livingston, LA    |        1        |
-|     Cherokee, GA     |        1        |
-|      Navajo, AZ      |        1        |
-|      Person, NC      |        1        |
-|      Noble, IN       |        1        |
-|     Osceola, FL      |        1        |
-|     Franklin, KS     |        1        |
-|     Kendall, TX      |        1        |
-|     Atlantic, NJ     |        1        |
-|     Rolette, ND      |        1        |
-|       Rock, MN       |        1        |
-|     Carteret, NC     |        1        |
-|      Uvalde, TX      |        1        |
-|      Beaver, PA      |        1        |
-|     Winkler, TX      |        1        |
-|    Nez Perce, ID     |        1        |
-|      Gibson, IN      |        1        |
-|    Abbeville, SC     |        1        |
-|     Cavalier, ND     |        1        |
-|    Covington, AL     |        1        |
-|     Waupaca, WI      |        1        |
-|      Ocean, NJ       |        1        |
-|     Buncombe, NC     |        1        |
-|     Wapello, IA      |        1        |
-|    Edgecombe, NC     |        1        |
-|      Bartow, GA      |        1        |
-|    Jefferson, IA     |        1        |
-|      Floyd, IA       |        1        |
-|    Marinette, WI     |        1        |
-|    Calcasieu, LA     |        1        |
-|     Bulloch, GA      |        1        |
-|     Buchanan, IA     |        1        |
-|       Lee, IA        |        1        |
-|      Louisa, IA      |        1        |
-|     Lincoln, ID      |        1        |
-|   Pittsylvania, VA   |        1        |
-|       Elko, NV       |        1        |
-|     Indiana, PA      |        1        |
-|      Benton, MO      |        1        |
-|    Washington, UT    |        1        |
-|     Harnett, NC      |        1        |
-|     Kootenai, ID     |        1        |
-|   San Patricio, TX   |        1        |
-|      Blanco, TX      |        1        |
-|    Des Moines, IA    |        1        |
-|     Fayette, TN      |        1        |
-|     Auglaize, OH     |        1        |
-|      Bryan, GA       |        1        |
-|      Boone, IA       |        1        |
-|     Lamoille, VT     |        1        |
-|    Chittenden, VT    |        1        |
-|     El Paso, TX      |        1        |
-|      Grimes, TX      |        1        |
-|     Sanpete, UT      |        1        |
-|      Pierce, WI      |        1        |
-|      Burke, NC       |        1        |
-|     Lincoln, NV      |        1        |
-|     Madison, KY      |        1        |
-|     Lincoln, LA      |        1        |
-|     Portage, OH      |        1        |
-|    Clearwater, ID    |        1        |
-|      Huron, MI       |        1        |
-|      Wilson, NC      |        1        |
-|       Bibb, GA       |        1        |
-|     Harrison, IA     |        1        |
-|       Kent, RI       |        1        |
-|      Pender, NC      |        1        |
-|     Mitchell, NC     |        1        |
-|      Citrus, FL      |        1        |
-|      Medina, TX      |        1        |
-|      Holmes, FL      |        1        |
-|     Lincoln, MO      |        1        |
-|      Greene, MO      |        1        |
-|    Craighead, AR     |        1        |
-|     Grenada, MS      |        1        |
-|      Posey, IN       |        1        |
-|   St. Bernard, LA    |        1        |
-|      Rogers, OK      |        1        |
-|     Baldwin, AL      |        1        |
-|      Clark, IN       |        1        |
-|     Hamilton, NE     |        1        |
-|      Jones, MS       |        1        |
-|    Churchill, NV     |        1        |
-|      Shelby, IA      |        1        |
-|      Ellis, KS       |        1        |
-|      Dawson, GA      |        1        |
-|      Dixon, NE       |        1        |
-|     Mitchell, IA     |        1        |
-|     Rockdale, GA     |        1        |
-|     Douglas, OR      |        1        |
-|      Wilkes, NC      |        1        |
-|      Stokes, NC      |        1        |
-|     Pulaski, AR      |        1        |
-|      Benton, WA      |        1        |
-|     San Juan, NM     |        1        |
-|      Butler, KS      |        1        |
-|   Charles City, VA   |        1        |
-|     Osceola, IA      |        1        |
-|      Oscoda, MI      |        1        |
-|    Jefferson, OH     |        1        |
-|       Wood, WI       |        1        |
-|    Terrebonne, LA    |        1        |
-|    Washington, LA    |        1        |
-|      Branch, MI      |        1        |
-|     Alamance, NC     |        1        |
-|   Chesterfield, VA   |        1        |
-|     Jackson, MS      |        1        |
-|     Johnson, TX      |        1        |
-|      Scott, MS       |        1        |
-|      Rankin, MS      |        1        |
-|       Lee, NC        |        1        |
-|      Jasper, MS      |        1        |
-|       Pope, MN       |        1        |
-|   Natchitoches, LA   |        1        |
-|       Bay, FL        |        1        |
-|      Benzie, MI      |        1        |
+| Rank |        County        | Number of Teams |
+|:----:|:--------------------:|:---------------:|
+|  1   |      Wayne, MI       |       85        |
+|  2   |   Los Angeles, CA    |       65        |
+|  3   |     Oakland, MI      |       50        |
+|  4   |       King, WA       |       45        |
+|  T5  |   Santa Clara, CA    |       42        |
+|  T5  |      Harris, TX      |       42        |
+|  7   |    San Diego, CA     |       37        |
+|  8   |     Hennepin, MN     |       30        |
+|  T9  |     Genesee, MI      |       29        |
+|  T9  |     Maricopa, AZ     |       29        |
+|  11  |     Suffolk, NY      |       27        |
+|  12  |      Queens, NY      |       26        |
+|  13  |    Middlesex, MA     |       25        |
+|  14  |      Macomb, MI      |       24        |
+|  15  |      Orange, CA      |       23        |
+| T16  |       Kent, MI       |       22        |
+| T16  |      Fulton, GA      |       22        |
+|  18  |     Jackson, MO      |       21        |
+| T19  |       Cook, IL       |       20        |
+| T19  |      Clark, NV       |       20        |
+| T21  |    Washtenaw, MI     |       19        |
+| T21  |       Wake, NC       |       19        |
+| T21  |      Ramsey, MN      |       19        |
+|  24  |      Nassau, NY      |       18        |
+| T25  |      Monroe, NY      |       17        |
+| T25  |     Honolulu, HI     |       17        |
+| T25  |      Bexar, TX       |       17        |
+| T25  |      Dallas, TX      |       17        |
+| T29  |     Hartford, CT     |       16        |
+| T29  |      Collin, TX      |       16        |
+| T31  |      Travis, TX      |       15        |
+| T31  |    Milwaukee, WI     |       15        |
+| T33  |    Worcester, MA     |       14        |
+| T33  |   Hillsborough, NH   |       14        |
+| T33  |    St. Louis, MO     |       14        |
+| T33  |      Ingham, MI      |       14        |
+| T33  |    Salt Lake, UT     |       14        |
+| T38  |    San Mateo, CA     |       13        |
+| T38  |     Cuyahoga, OH     |       13        |
+| T38  |    Montgomery, PA    |       13        |
+| T38  |     Alameda, CA      |       13        |
+| T42  |     Somerset, NJ     |       12        |
+| T42  |      Essex, NJ       |       12        |
+| T42  |   Contra Costa, CA   |       12        |
+| T42  |      Dakota, MN      |       12        |
+| T42  |     Saginaw, MI      |       12        |
+| T47  |    Allegheny, PA     |       11        |
+| T47  |     Waukesha, WI     |       11        |
+| T47  |     Ventura, CA      |       11        |
+| T47  |     Gwinnett, GA     |       11        |
+| T47  |     Berrien, MI      |       11        |
+| T47  |     Jackson, MI      |       11        |
+| T47  |     Hidalgo, TX      |       11        |
+| T47  |  San Francisco, CA   |       11        |
+| T55  |     Norfolk, MA      |       10        |
+| T55  |      Ottawa, MI      |       10        |
+| T55  |    Burlington, NJ    |       10        |
+| T55  |      Monroe, MI      |       10        |
+| T55  |      Mercer, NJ      |       10        |
+| T55  |      Kings, NY       |       10        |
+| T55  |    Washington, DC    |       10        |
+| T55  |      Orange, FL      |       10        |
+| T55  |    Kalamazoo, MI     |       10        |
+| T64  |    Middlesex, NJ     |        9        |
+| T64  |      Tulsa, OK       |        9        |
+| T64  |     Franklin, OH     |        9        |
+| T64  |    New_Haven, CT     |        9        |
+| T64  |      Pierce, WA      |        9        |
+| T64  |     Johnson, KS      |        9        |
+| T64  |      Denver, CO      |        9        |
+| T64  |       Knox, TN       |        9        |
+| T64  |     Monterey, CA     |        9        |
+| T64  |     Muskegon, MI     |        9        |
+| T64  |    St. Louis, MN     |        9        |
+| T64  |    St. Clair, MI     |        9        |
+| T76  |      Morris, NJ      |        8        |
+| T76  |    Miami-Dade, FL    |        8        |
+| T76  |   Fairfax Co., VA    |        8        |
+| T76  |    St. Joseph, IN    |        8        |
+| T76  |    Palm Beach, FL    |        8        |
+| T76  |    New_London, CT    |        8        |
+| T76  |    Fairfield, CT     |        8        |
+| T76  |    Merrimack, NH     |        8        |
+| T76  |    Multnomah, OR     |        8        |
+| T76  |     Oklahoma, OK     |        8        |
+| T76  |     Arapahoe, CO     |        8        |
+| T76  |    Washington, MN    |        8        |
+| T76  |    Livingston, MI    |        8        |
+| T76  |     Calhoun, MI      |        8        |
+| T76  |    Shiawassee, MI    |        8        |
+| T76  |       Bay, MI        |        8        |
+| T92  |     Broward, FL      |        7        |
+| T92  |      Marion, IN      |        7        |
+| T92  |      Bronx, NY       |        7        |
+| T92  |    Montgomery, MD    |        7        |
+| T92  |      Essex, MA       |        7        |
+| T92  |    Snohomish, WA     |        7        |
+| T92  |      Anoka, MN       |        7        |
+| T92  |    Hillsdale, MI     |        7        |
+| T100 |      Albany, NY      |        6        |
+| T100 |     Brevard, FL      |        6        |
+| T100 |    Cumberland, ME    |        6        |
+| T100 |   Philadelphia, PA   |        6        |
+| T100 |     Delaware, PA     |        6        |
+| T100 |     Chester, PA      |        6        |
+| T100 |      Fresno, CA      |        6        |
+| T100 |     Ontario, NY      |        6        |
+| T100 |       Ada, ID        |        6        |
+| T100 |     Allegan, MI      |        6        |
+| T100 |   Westchester, NY    |        6        |
+| T100 |      Carver, MN      |        6        |
+| T100 |      Wright, MN      |        6        |
+| T100 |     Lenawee, MI      |        6        |
+| T100 |     Stearns, MN      |        6        |
+| T100 |    Van Buren, MI     |        6        |
+| T100 |     Rockland, NY     |        6        |
+| T117 |     Plymouth, MA     |        5        |
+| T117 |      Bucks, PA       |        5        |
+| T117 |     Suffolk, MA      |        5        |
+| T117 |       York, ME       |        5        |
+| T117 |     Larimer, CO      |        5        |
+| T117 |     Tolland, CT      |        5        |
+| T117 |      Camden, NJ      |        5        |
+| T117 |     Passaic, NJ      |        5        |
+| T117 |    Greenville, SC    |        5        |
+| T117 |    Strafford, NH     |        5        |
+| T117 |     Richmond, VA     |        5        |
+| T117 |      Orange, NC      |        5        |
+| T117 |     El Paso, CO      |        5        |
+| T117 |     Hampden, MA      |        5        |
+| T117 |       Pima, AZ       |        5        |
+| T117 |    Rockingham, NH    |        5        |
+| T117 |   Anne Arundel, MD   |        5        |
+| T117 |    Clackamas, OR     |        5        |
+| T117 |     Spokane, WA      |        5        |
+| T117 |     Forsyth, GA      |        5        |
+| T117 |       Clay, MO       |        5        |
+| T117 |    Wyandotte, KS     |        5        |
+| T117 |    Sacramento, CA    |        5        |
+| T117 |      Clark, WA       |        5        |
+| T117 |     Midland, MI      |        5        |
+| T117 |       Cass, MN       |        5        |
+| T117 |    Manitowoc, WI     |        5        |
+| T117 |     Tarrant, TX      |        5        |
+| T117 |    La Crosse, WI     |        5        |
+| T117 |     Orleans, LA      |        5        |
+| T117 |     Tuscola, MI      |        5        |
+| T117 |    Menominee, MI     |        5        |
+| T117 |    Bernalillo, NM    |        5        |
+| T150 |     Trumbull, OH     |        4        |
+| T150 |      Butler, OH      |        4        |
+| T150 |    Tippecanoe, IN    |        4        |
+| T150 |    Frederick, MD     |        4        |
+| T150 |      Benton, OR      |        4        |
+| T150 |     Houghton, MI     |        4        |
+| T150 |     Hamilton, IN     |        4        |
+| T150 |      Howard, MD      |        4        |
+| T150 |      Durham, NC      |        4        |
+| T150 |       Cobb, GA       |        4        |
+| T150 |   St. Charles, MO    |        4        |
+| T150 |     Richland, SC     |        4        |
+| T150 |   Hillsborough, FL   |        4        |
+| T150 |     Hanover, VA      |        4        |
+| T150 |       Lake, FL       |        4        |
+| T150 |     Boulder, CO      |        4        |
+| T150 |      Bergen, NJ      |        4        |
+| T150 |      Lapeer, MI      |        4        |
+| T150 |  Grand Traverse, MI  |        4        |
+| T150 |     Monmouth, NJ     |        4        |
+| T150 |   St. Tammany, LA    |        4        |
+| T150 |     Imperial, CA     |        4        |
+| T150 |      Scott, MN       |        4        |
+| T150 |     Okaloosa, FL     |        4        |
+| T150 |     Kennebec, ME     |        4        |
+| T150 |  Santa Barbara, CA   |        4        |
+| T150 |   Mecklenburg, NC    |        4        |
+| T150 |      Delta, MI       |        4        |
+| T150 |     Goodhue, MN      |        4        |
+| T150 |     Beltrami, MN     |        4        |
+| T150 |    Dougherty, GA     |        4        |
+| T150 |      Oceana, MI      |        4        |
+| T150 |     Lubbock, TX      |        4        |
+| T150 |      Shelby, TN      |        4        |
+| T150 |      Antrim, MI      |        4        |
+| T150 |     Wexford, MI      |        4        |
+| T150 |     Isabella, MI     |        4        |
+| T150 |     Carlton, MN      |        4        |
+| T150 |      Sonoma, CA      |        4        |
+| T150 |      Mason, MI       |        4        |
+| T150 |    Dickinson, MI     |        4        |
+| T191 |      Howard, IN      |        3        |
+| T191 |       Lake, IN       |        3        |
+| T191 |      Warren, NJ      |        3        |
+| T191 |    Litchfield, CT    |        3        |
+| T191 |     Belknap, NH      |        3        |
+| T191 |     Fauquier, VA     |        3        |
+| T191 |     Harrison, MS     |        3        |
+| T191 |       Erie, NY       |        3        |
+| T191 |    Black Hawk, IA    |        3        |
+| T191 |     Henrico, VA      |        3        |
+| T191 |    Arlington, VA     |        3        |
+| T191 |    Alexandria, VA    |        3        |
+| T191 |    Deschutes, OR     |        3        |
+| T191 |      Hawaii, HI      |        3        |
+| T191 |     Madison, IL      |        3        |
+| T191 |    St. Clair, IL     |        3        |
+| T191 |    Providence, RI    |        3        |
+| T191 |     Guilford, NC     |        3        |
+| T191 |     Chippewa, MI     |        3        |
+| T191 |    Winnebago, IL     |        3        |
+| T191 |    Middlesex, CT     |        3        |
+| T191 |      Brown, WI       |        3        |
+| T191 |  Baltimore City, MD  |        3        |
+| T191 |  Baltimore Co., MD   |        3        |
+| T191 |      Peoria, IL      |        3        |
+| T191 |     Newaygo, MI      |        3        |
+| T191 |    Eau Claire, WI    |        3        |
+| T191 |     Carroll, MD      |        3        |
+| T191 |      Otsego, MI      |        3        |
+| T191 |      Creek, OK       |        3        |
+| T191 |  St. Louis Co., MO   |        3        |
+| T191 |       Maui, HI       |        3        |
+| T191 |    Crow Wing, MN     |        3        |
+| T191 |      Meeker, MN      |        3        |
+| T191 |     Renville, MN     |        3        |
+| T191 |      Canyon, ID      |        3        |
+| T191 |      Roseau, MN      |        3        |
+| T191 |      DuPage, IL      |        3        |
+| T191 |      Martin, MN      |        3        |
+| T191 |     Madison, AL      |        3        |
+| T191 |     Houston, MN      |        3        |
+| T191 |    Sherburne, MN     |        3        |
+| T191 |    Montgomery, OH    |        3        |
+| T191 |    Hendricks, IN     |        3        |
+| T191 |      Becker, MN      |        3        |
+| T191 |  San Bernardino, CA  |        3        |
+| T191 |      Hudson, NJ      |        3        |
+| T191 |     Osceola, MI      |        3        |
+| T191 | East Baton Rouge, LA |        3        |
+| T191 |      Emmet, MI       |        3        |
+| T191 |       Hays, TX       |        3        |
+| T191 |     Muskogee, OK     |        3        |
+| T191 |       Cass, MI       |        3        |
+| T191 |    Fort Bend, TX     |        3        |
+| T191 |    Marquette, MI     |        3        |
+| T191 |    Charlevoix, MI    |        3        |
+| T191 | Prince George's, MD  |        3        |
+| T191 |     Morrison, MN     |        3        |
+| T191 |    Washington, OR    |        3        |
+| T191 |      Pasco, FL       |        3        |
+| T191 |      Allen, IN       |        3        |
+| T191 |     Mackinac, MI     |        3        |
+| T191 |      Comal, TX       |        3        |
+| T191 |     Mecosta, MI      |        3        |
+| T191 |      Ionia, MI       |        3        |
+| T191 |     Brazoria, TX     |        3        |
+| T191 |    St. Joseph, MI    |        3        |
+| T191 |      Iosco, MI       |        3        |
+| T191 |     Johnston, NC     |        3        |
+| T191 |    Iberville, LA     |        3        |
+| T191 |     Sanilac, MI      |        3        |
+| T191 |     Gogebic, MI      |        3        |
+| T191 |      Ulster, NY      |        3        |
+| T191 |      Clare, MI       |        3        |
+| T191 |     Grafton, NH      |        3        |
+| T191 |    Jefferson, AL     |        3        |
+| T191 |     Gratiot, MI      |        3        |
+| T268 |     Saratoga, NY     |        2        |
+| T268 |    Limestone, AL     |        2        |
+| T268 |     Pinellas, FL     |        2        |
+| T268 |      Duval, FL       |        2        |
+| T268 |     Bristol, MA      |        2        |
+| T268 |    Outagamie, WI     |        2        |
+| T268 |     Windsor, VT      |        2        |
+| T268 |     Hampton, VA      |        2        |
+| T268 |    Galveston, TX     |        2        |
+| T268 |    Charleston, SC    |        2        |
+| T268 |     Niagara, NY      |        2        |
+| T268 |      Lucas, OH       |        2        |
+| T268 |    Goochland, VA     |        2        |
+| T268 |      Solano, CA      |        2        |
+| T268 |   Grand Forks, ND    |        2        |
+| T268 |       Linn, OR       |        2        |
+| T268 |       Linn, IA       |        2        |
+| T268 | San Luis Obispo, CA  |        2        |
+| T268 |    Washington, WI    |        2        |
+| T268 |      Wayne, NY       |        2        |
+| T268 |      Union, NJ       |        2        |
+| T268 |      Horry, SC       |        2        |
+| T268 |     Rockwall, TX     |        2        |
+| T268 |       Mesa, CO       |        2        |
+| T268 |   Falls Church, VA   |        2        |
+| T268 |    Montgomery, TX    |        2        |
+| T268 |     Elkhart, IN      |        2        |
+| T268 |   San Joaquin, CA    |        2        |
+| T268 |       Yolo, CA       |        2        |
+| T268 |      Grant, IN       |        2        |
+| T268 |     Cochise, AZ      |        2        |
+| T268 |     Cheshire, NH     |        2        |
+| T268 |      Caddo, LA       |        2        |
+| T268 |  Prince William, VA  |        2        |
+| T268 |     Manassas, VA     |        2        |
+| T268 |       Cass, MO       |        2        |
+| T268 |       Kane, IL       |        2        |
+| T268 |     Douglas, CO      |        2        |
+| T268 |    Jefferson, CO     |        2        |
+| T268 |   St. Charles, LA    |        2        |
+| T268 |   Fond du Lac, WI    |        2        |
+| T268 |       Erie, OH       |        2        |
+| T268 |     Kendall, IL      |        2        |
+| T268 |   Pottawatomie, OK   |        2        |
+| T268 |       Lake, IL       |        2        |
+| T268 |      Caddo, OK       |        2        |
+| T268 |     Tazewell, IL     |        2        |
+| T268 |       Lyon, MN       |        2        |
+| T268 |     Olmsted, MN      |        2        |
+| T268 |     Angelina, TX     |        2        |
+| T268 |      Yakima, WA      |        2        |
+| T268 |      Marion, OR      |        2        |
+| T268 |      Kitsap, WA      |        2        |
+| T268 |      Sussex, NJ      |        2        |
+| T268 |      Mayes, OK       |        2        |
+| T268 |     Mahoning, OH     |        2        |
+| T268 |     Iredell, NC      |        2        |
+| T268 |      Marion, FL      |        2        |
+| T268 |       Lake, MN       |        2        |
+| T268 |    Kandiyohi, MN     |        2        |
+| T268 |    Otter Tail, MN    |        2        |
+| T268 |       Utah, UT       |        2        |
+| T268 |    Sheboygan, WI     |        2        |
+| T268 |    Dorchester, SC    |        2        |
+| T268 |      Monroe, IN      |        2        |
+| T268 |    Lafayette, LA     |        2        |
+| T268 |     Sarasota, FL     |        2        |
+| T268 |     Clatsop, OR      |        2        |
+| T268 |     Leelanau, MI     |        2        |
+| T268 |       Rice, MN       |        2        |
+| T268 |      Union, OR       |        2        |
+| T268 |     Chatham, NC      |        2        |
+| T268 |     LaPorte, IN      |        2        |
+| T268 |      White, AR       |        2        |
+| T268 |      DeKalb, GA      |        2        |
+| T268 |     Hamilton, OH     |        2        |
+| T268 |     Whitman, WA      |        2        |
+| T268 |     Alachua, FL      |        2        |
+| T268 |     Umatilla, OR     |        2        |
+| T268 |     Columbia, OR     |        2        |
+| T268 |     Delaware, OH     |        2        |
+| T268 |   Westmoreland, PA   |        2        |
+| T268 |     Jackson, GA      |        2        |
+| T268 |      Denton, TX      |        2        |
+| T268 |     Anderson, TN     |        2        |
+| T268 |     Johnson, MO      |        2        |
+| T268 |      Pettis, MO      |        2        |
+| T268 |   New_Hanover, NC    |        2        |
+| T268 |     Bastrop, TX      |        2        |
+| T268 |      Ellis, TX       |        2        |
+| T268 |       Polk, IA       |        2        |
+| T268 |     Chatham, GA      |        2        |
+| T268 |     Carroll, NH      |        2        |
+| T268 |     Stevens, WA      |        2        |
+| T268 |    Riverside, CA     |        2        |
+| T268 |    Williamson, TX    |        2        |
+| T268 |      Itasca, MN      |        2        |
+| T268 |     Clinton, MI      |        2        |
+| T268 |     Loudoun, VA      |        2        |
+| T268 |      Isanti, MN      |        2        |
+| T268 |      Washoe, NV      |        2        |
+| T268 |   Northampton, PA    |        2        |
+| T268 |    Jefferson, KY     |        2        |
+| T268 |   Presque Isle, MI   |        2        |
+| T268 |      Ogemaw, MI      |        2        |
+| T268 |      Otero, NM       |        2        |
+| T268 |  Lac qui Parle, MN   |        2        |
+| T268 |      Eaton, MI       |        2        |
+| T268 |    Rutherford, NC    |        2        |
+| T268 | West Baton Rouge, LA |        2        |
+| T268 |    Whitfield, GA     |        2        |
+| T268 |    Jefferson, LA     |        2        |
+| T268 |     Manistee, MI     |        2        |
+| T268 |      Alger, MI       |        2        |
+| T268 |     Kalkaska, MI     |        2        |
+| T268 |       Leon, FL       |        2        |
+| T268 |      Essex, NY       |        2        |
+| T268 |      Scott, IA       |        2        |
+| T268 |     Windham, CT      |        2        |
+| T268 |    Twin Falls, ID    |        2        |
+| T268 |    Brunswick, NC     |        2        |
+| T268 |     Gladwin, MI      |        2        |
+| T268 |    Ontonagon, MI     |        2        |
+| T268 |      Racine, WI      |        2        |
+| T268 |      Tulare, CA      |        2        |
+| T268 |      Merced, CA      |        2        |
+| T268 |     Licking, OH      |        2        |
+| T268 |       Napa, CA       |        2        |
+| T268 |    Georgetown, SC    |        2        |
+| T268 |     Montcalm, MI     |        2        |
+| T268 |   Vanderburgh, IN    |        2        |
+| T268 |      Pinal, AZ       |        2        |
+| T268 |       Iron, MI       |        2        |
+| T268 |     Daviess, IN      |        2        |
+| T268 |     Fairfax, VA      |        2        |
+| T268 |     Cameron, TX      |        2        |
+| T268 |     Cape May, NJ     |        2        |
+| T268 |      Summit, OH      |        2        |
+| T268 |    St. Johns, FL     |        2        |
+| T268 |      Grant, MN       |        2        |
+| T268 |      Oxford, ME      |        2        |
+| T268 |     Victoria, TX     |        2        |
+| T268 |       Hall, GA       |        2        |
+| T411 |      Baxter, AR      |        1        |
+| T411 |      Mohave, AZ      |        1        |
+| T411 |     Newport, RI      |        1        |
+| T411 |       Hunt, TX       |        1        |
+| T411 |     Johnson, IA      |        1        |
+| T411 |      Grant, WI       |        1        |
+| T411 |      Martin, FL      |        1        |
+| T411 |     Wyoming, PA      |        1        |
+| T411 |   St. Lawrence, NY   |        1        |
+| T411 |       Erie, PA       |        1        |
+| T411 |      Salem, NJ       |        1        |
+| T411 |     Crawford, AR     |        1        |
+| T411 |     Stafford, VA     |        1        |
+| T411 |      Oconee, SC      |        1        |
+| T411 |    New_Castle, DE    |        1        |
+| T411 |    Montgomery, VA    |        1        |
+| T411 |    Petersburg, VA    |        1        |
+| T411 |     Madison, IN      |        1        |
+| T411 |      Warren, MS      |        1        |
+| T411 |     Lincoln, TN      |        1        |
+| T411 |     Campbell, KY     |        1        |
+| T411 |    Anchorage, AK     |        1        |
+| T411 |      Kemper, MS      |        1        |
+| T411 |      Leake, MS       |        1        |
+| T411 |     Neshoba, MS      |        1        |
+| T411 |     Winston, MS      |        1        |
+| T411 | Charlottesville, VA  |        1        |
+| T411 |     Tompkins, NY     |        1        |
+| T411 |   Rock Island, IL    |        1        |
+| T411 |      Lehigh, PA      |        1        |
+| T411 |    St. Mary's, MD    |        1        |
+| T411 |      Steele, ND      |        1        |
+| T411 |      Towner, ND      |        1        |
+| T411 |      Harvey, KS      |        1        |
+| T411 |     Halifax, VA      |        1        |
+| T411 |      Warren, OH      |        1        |
+| T411 |      Marion, SC      |        1        |
+| T411 |      Aiken, SC       |        1        |
+| T411 |      Miami, KS       |        1        |
+| T411 |    Lackawanna, PA    |        1        |
+| T411 |     Doña Ana, NM     |        1        |
+| T411 |    Henderson, NC     |        1        |
+| T411 |   Martinsville, VA   |        1        |
+| T411 |     Natrona, WY      |        1        |
+| T411 |       Dane, WI       |        1        |
+| T411 |      Madera, CA      |        1        |
+| T411 |   Pearl River, MS    |        1        |
+| T411 |    Huntington, IN    |        1        |
+| T411 |       York, SC       |        1        |
+| T411 |    Bonneville, ID    |        1        |
+| T411 |     Bannock, ID      |        1        |
+| T411 |     Franklin, VA     |        1        |
+| T411 |     Garrett, MD      |        1        |
+| T411 |     Johnson, IN      |        1        |
+| T411 |     Collier, FL      |        1        |
+| T411 |     Florence, SC     |        1        |
+| T411 |     Norfolk, VA      |        1        |
+| T411 |   Northampton, VA    |        1        |
+| T411 |      Broome, NY      |        1        |
+| T411 |      Tioga, NY       |        1        |
+| T411 |    Tangipahoa, LA    |        1        |
+| T411 |     Boundary, ID     |        1        |
+| T411 |     Volusia, FL      |        1        |
+| T411 |    Washington, OK    |        1        |
+| T411 |     Forrest, MS      |        1        |
+| T411 |   Montmorency, MI    |        1        |
+| T411 |     Pontotoc, OK     |        1        |
+| T411 |   Newport News, VA   |        1        |
+| T411 |     Rutland, VT      |        1        |
+| T411 |      Kauai, HI       |        1        |
+| T411 |     Coconino, AZ     |        1        |
+| T411 |      McLeod, MN      |        1        |
+| T411 |       Lane, OR       |        1        |
+| T411 |    Caledonia, VT     |        1        |
+| T411 |     Stevens, MN      |        1        |
+| T411 |     Lebanon, PA      |        1        |
+| T411 |      Marin, CA       |        1        |
+| T411 |     Dauphin, PA      |        1        |
+| T411 |      Medina, OH      |        1        |
+| T411 |    Culberson, TX     |        1        |
+| T411 |    Monongalia, WV    |        1        |
+| T411 |    Rockingham, NC    |        1        |
+| T411 |       Pitt, NC       |        1        |
+| T411 |       Luna, NM       |        1        |
+| T411 |      Oldham, KY      |        1        |
+| T411 |    Winnebago, WI     |        1        |
+| T411 |     Fayette, KY      |        1        |
+| T411 |     Wabasha, MN      |        1        |
+| T411 |    Chesapeake, VA    |        1        |
+| T411 |      Fulton, IN      |        1        |
+| T411 |     McLennan, TX     |        1        |
+| T411 |      Island, WA      |        1        |
+| T411 |      Clarke, VA      |        1        |
+| T411 |     Le Sueur, MN     |        1        |
+| T411 |     Nicollet, MN     |        1        |
+| T411 |     Jackson, OR      |        1        |
+| T411 |      Nueces, TX      |        1        |
+| T411 |     Chisago, MN      |        1        |
+| T411 |      Mower, MN       |        1        |
+| T411 |      Winona, MN      |        1        |
+| T411 |     Hubbard, MN      |        1        |
+| T411 |      Brown, MN       |        1        |
+| T411 |     Calhoun, AL      |        1        |
+| T411 |     Delaware, OK     |        1        |
+| T411 |     Okmulgee, OK     |        1        |
+| T411 |      Saline, KS      |        1        |
+| T411 |    El Dorado, CA     |        1        |
+| T411 |     Ozaukee, WI      |        1        |
+| T411 |     Chippewa, MN     |        1        |
+| T411 |     Missoula, MT     |        1        |
+| T411 |      Placer, CA      |        1        |
+| T411 |    Pennington, MN    |        1        |
+| T411 |      Camden, MO      |        1        |
+| T411 |     Sublette, WY     |        1        |
+| T411 |    Pipestone, MN     |        1        |
+| T411 |    Big Stone, MN     |        1        |
+| T411 |     Douglas, MN      |        1        |
+| T411 |      Camden, GA      |        1        |
+| T411 |      Onslow, NC      |        1        |
+| T411 |     Fayette, GA      |        1        |
+| T411 |      Boone, IL       |        1        |
+| T411 |    Portsmouth, VA    |        1        |
+| T411 |     Augusta, VA      |        1        |
+| T411 |      Teton, WY       |        1        |
+| T411 |     Canadian, OK     |        1        |
+| T411 |     Ouachita, LA     |        1        |
+| T411 |      Union, OH       |        1        |
+| T411 |      Putnam, WV      |        1        |
+| T411 |    Cheboygan, MI     |        1        |
+| T411 |      Dubois, IN      |        1        |
+| T411 |     Houston, GA      |        1        |
+| T411 |    Hunterdon, NJ     |        1        |
+| T411 |       Rock, WI       |        1        |
+| T411 |     Fillmore, MN     |        1        |
+| T411 |      Wayne, NC       |        1        |
+| T411 |      Benton, MN      |        1        |
+| T411 |       Bell, TX       |        1        |
+| T411 |      Allen, OH       |        1        |
+| T411 |      Boone, MO       |        1        |
+| T411 |     Chemung, NY      |        1        |
+| T411 |      Kenton, KY      |        1        |
+| T411 |       Pike, KY       |        1        |
+| T411 |     Clallam, WA      |        1        |
+| T411 |     Calloway, KY     |        1        |
+| T411 |      Nobles, MN      |        1        |
+| T411 |      Story, IA       |        1        |
+| T411 |      Grady, OK       |        1        |
+| T411 |    Botetourt, VA     |        1        |
+| T411 |     Hancock, IN      |        1        |
+| T411 |     Venango, PA      |        1        |
+| T411 |      Morgan, AL      |        1        |
+| T411 |    Washington, TN    |        1        |
+| T411 |       Pike, IN       |        1        |
+| T411 |     Richmond, NY     |        1        |
+| T411 |     Sullivan, TN     |        1        |
+| T411 |      Centre, PA      |        1        |
+| T411 |     Yamhill, OR      |        1        |
+| T411 |     Franklin, PA     |        1        |
+| T411 |      Lewis, WA       |        1        |
+| T411 |    Val Verde, TX     |        1        |
+| T411 |     Orleans, NY      |        1        |
+| T411 |    Champaign, IL     |        1        |
+| T411 |      Stark, OH       |        1        |
+| T411 |    Stanislaus, CA    |        1        |
+| T411 |     Woodford, IL     |        1        |
+| T411 |    Los Alamos, NM    |        1        |
+| T411 |     Kanabec, MN      |        1        |
+| T411 |      Skagit, WA      |        1        |
+| T411 |      Teton, ID       |        1        |
+| T411 |     Escambia, FL     |        1        |
+| T411 |    Jefferson, IL     |        1        |
+| T411 |     Muscogee, GA     |        1        |
+| T411 |      McLean, IL      |        1        |
+| T411 |     McKinley, NM     |        1        |
+| T411 |    Faribault, MN     |        1        |
+| T411 |      Wayne, PA       |        1        |
+| T411 |    Williamson, TN    |        1        |
+| T411 |     Sangamon, IL     |        1        |
+| T411 |      Tooele, UT      |        1        |
+| T411 |       Clay, MN       |        1        |
+| T411 |      Erath, TX       |        1        |
+| T411 |     Thurston, WA     |        1        |
+| T411 |     Douglas, GA      |        1        |
+| T411 |      Roane, TN       |        1        |
+| T411 |    Washington, PA    |        1        |
+| T411 |      Blount, TN      |        1        |
+| T411 |    Penobscot, ME     |        1        |
+| T411 |    Pennington, SD    |        1        |
+| T411 |      Steele, MN      |        1        |
+| T411 |      Butte, CA       |        1        |
+| T411 |     Cowlitz, WA      |        1        |
+| T411 |      Wadena, MN      |        1        |
+| T411 |     Redwood, MN      |        1        |
+| T411 |       Linn, MO       |        1        |
+| T411 |   Schoolcraft, MI    |        1        |
+| T411 |    Jefferson, WA     |        1        |
+| T411 |   Bartholomew, IN    |        1        |
+| T411 |     Hamilton, TN     |        1        |
+| T411 |      Cedar, IA       |        1        |
+| T411 |       Gila, AZ       |        1        |
+| T411 |   St. Francois, MO   |        1        |
+| T411 |     Douglas, KS      |        1        |
+| T411 |      Platte, MO      |        1        |
+| T411 |     Callaway, MO     |        1        |
+| T411 |       Vigo, IN       |        1        |
+| T411 |      Barry, MI       |        1        |
+| T411 |      Mason, WA       |        1        |
+| T411 |       Cass, IN       |        1        |
+| T411 |     Richland, OH     |        1        |
+| T411 |      Logan, AR       |        1        |
+| T411 |      Benton, AR      |        1        |
+| T411 |      Arenac, MI      |        1        |
+| T411 |      Alpena, MI      |        1        |
+| T411 |      Alcona, MI      |        1        |
+| T411 |    Dickinson, IA     |        1        |
+| T411 |     Marshall, MN     |        1        |
+| T411 |     Forsyth, NC      |        1        |
+| T411 |       Luce, MI       |        1        |
+| T411 |       Pine, MN       |        1        |
+| T411 |      Walton, FL      |        1        |
+| T411 |      Salem, VA       |        1        |
+| T411 |      Butler, PA      |        1        |
+| T411 |       Lea, NM        |        1        |
+| T411 |     Chippewa, WI     |        1        |
+| T411 |     Kankakee, IL     |        1        |
+| T411 |     Calhoun, GA      |        1        |
+| T411 |      Vernon, WI      |        1        |
+| T411 |      DeKalb, IL      |        1        |
+| T411 |    Poweshiek, IA     |        1        |
+| T411 |    Lunenburg, VA     |        1        |
+| T411 |      Riley, KS       |        1        |
+| T411 |   Independence, AR   |        1        |
+| T411 |       Kern, CA       |        1        |
+| T411 |    Sunflower, MS     |        1        |
+| T411 |     Crawford, MI     |        1        |
+| T411 |     Franklin, ME     |        1        |
+| T411 |     Somerset, ME     |        1        |
+| T411 |   Williamsburg, SC   |        1        |
+| T411 |      Fulton, OH      |        1        |
+| T411 |    Hempstead, AR     |        1        |
+| T411 |      Amelia, VA      |        1        |
+| T411 |    Cumberland, VA    |        1        |
+| T411 |      Bureau, IL      |        1        |
+| T411 |      Warren, NC      |        1        |
+| T411 |      Greene, TN      |        1        |
+| T411 |     Calumet, WI      |        1        |
+| T411 |       Clay, FL       |        1        |
+| T411 |     Hancock, ME      |        1        |
+| T411 |     Gallatin, MT     |        1        |
+| T411 |    Muscatine, IA     |        1        |
+| T411 |     Warrick, IN      |        1        |
+| T411 |     Seminole, FL     |        1        |
+| T411 |      Baraga, MI      |        1        |
+| T411 |     Walworth, WI     |        1        |
+| T411 |      Miller, AR      |        1        |
+| T411 |     Columbia, NY     |        1        |
+| T411 |      Swift, MN       |        1        |
+| T411 |     Catawba, NC      |        1        |
+| T411 |    Whiteside, IL     |        1        |
+| T411 |      Murray, GA      |        1        |
+| T411 |    Berkshire, MA     |        1        |
+| T411 |     Robeson, NC      |        1        |
+| T411 |       Rusk, WI       |        1        |
+| T411 |       Lee, FL        |        1        |
+| T411 |      Dodge, MN       |        1        |
+| T411 |     Sullivan, NH     |        1        |
+| T411 |     Grayson, TX      |        1        |
+| T411 |     Tazewell, VA     |        1        |
+| T411 |     Douglas, NE      |        1        |
+| T411 |     Garfield, OK     |        1        |
+| T411 |      Phelps, MO      |        1        |
+| T411 |    Hood River, OR    |        1        |
+| T411 |  Fredericksburg, VA  |        1        |
+| T411 |    San Benito, CA    |        1        |
+| T411 |     Caldwell, NC     |        1        |
+| T411 |      Gaston, NC      |        1        |
+| T411 |    Santa Cruz, AZ    |        1        |
+| T411 |     Jackson, NC      |        1        |
+| T411 |      Orange, VT      |        1        |
+| T411 |      Greene, OH      |        1        |
+| T411 |   Spartanburg, SC    |        1        |
+| T411 |   Trempealeau, WI    |        1        |
+| T411 |   Schenectady, NY    |        1        |
+| T411 |       Cass, ND       |        1        |
+| T411 |   Leavenworth, KS    |        1        |
+| T411 |       Lee, AL        |        1        |
+| T411 |     Hancock, MS      |        1        |
+| T411 |    Jefferson, MO     |        1        |
+| T411 |    Somervell, TX     |        1        |
+| T411 |      White, IN       |        1        |
+| T411 |   Mississippi, MO    |        1        |
+| T411 |      Chaves, NM      |        1        |
+| T411 |   Buena Vista, IA    |        1        |
+| T411 |       Knox, IL       |        1        |
+| T411 |      DeKalb, AL      |        1        |
+| T411 |    Cumberland, NC    |        1        |
+| T411 |    Cleveland, OK     |        1        |
+| T411 |      Worth, GA       |        1        |
+| T411 |      Elbert, CO      |        1        |
+| T411 |      Fulton, AR      |        1        |
+| T411 |      Moffat, CO      |        1        |
+| T411 |      Putnam, NY      |        1        |
+| T411 |       Wood, WV       |        1        |
+| T411 |     Davidson, TN     |        1        |
+| T411 |     Dubuque, IA      |        1        |
+| T411 |    Blue Earth, MN    |        1        |
+| T411 |     Stutsman, ND     |        1        |
+| T411 |     Laclede, MO      |        1        |
+| T411 |     Franklin, NC     |        1        |
+| T411 |     McDuffie, GA     |        1        |
+| T411 |     Harford, MD      |        1        |
+| T411 |    Livingston, IL    |        1        |
+| T411 |      Lorain, OH      |        1        |
+| T411 |      Owyhee, ID      |        1        |
+| T411 |       Coos, NH       |        1        |
+| T411 |   Androscoggin, ME   |        1        |
+| T411 |      Monroe, WI      |        1        |
+| T411 |     Lincoln, NC      |        1        |
+| T411 |    Missaukee, MI     |        1        |
+| T411 |    Livingston, LA    |        1        |
+| T411 |     Cherokee, GA     |        1        |
+| T411 |      Navajo, AZ      |        1        |
+| T411 |      Person, NC      |        1        |
+| T411 |      Noble, IN       |        1        |
+| T411 |     Osceola, FL      |        1        |
+| T411 |     Franklin, KS     |        1        |
+| T411 |     Kendall, TX      |        1        |
+| T411 |     Atlantic, NJ     |        1        |
+| T411 |     Rolette, ND      |        1        |
+| T411 |       Rock, MN       |        1        |
+| T411 |     Carteret, NC     |        1        |
+| T411 |      Uvalde, TX      |        1        |
+| T411 |      Beaver, PA      |        1        |
+| T411 |     Winkler, TX      |        1        |
+| T411 |    Nez Perce, ID     |        1        |
+| T411 |      Gibson, IN      |        1        |
+| T411 |    Abbeville, SC     |        1        |
+| T411 |     Cavalier, ND     |        1        |
+| T411 |    Covington, AL     |        1        |
+| T411 |     Waupaca, WI      |        1        |
+| T411 |      Ocean, NJ       |        1        |
+| T411 |     Buncombe, NC     |        1        |
+| T411 |     Wapello, IA      |        1        |
+| T411 |    Edgecombe, NC     |        1        |
+| T411 |      Bartow, GA      |        1        |
+| T411 |    Jefferson, IA     |        1        |
+| T411 |      Floyd, IA       |        1        |
+| T411 |    Marinette, WI     |        1        |
+| T411 |    Calcasieu, LA     |        1        |
+| T411 |     Bulloch, GA      |        1        |
+| T411 |     Buchanan, IA     |        1        |
+| T411 |       Lee, IA        |        1        |
+| T411 |      Louisa, IA      |        1        |
+| T411 |     Lincoln, ID      |        1        |
+| T411 |   Pittsylvania, VA   |        1        |
+| T411 |       Elko, NV       |        1        |
+| T411 |     Indiana, PA      |        1        |
+| T411 |      Benton, MO      |        1        |
+| T411 |    Washington, UT    |        1        |
+| T411 |     Harnett, NC      |        1        |
+| T411 |     Kootenai, ID     |        1        |
+| T411 |   San Patricio, TX   |        1        |
+| T411 |      Blanco, TX      |        1        |
+| T411 |    Des Moines, IA    |        1        |
+| T411 |     Fayette, TN      |        1        |
+| T411 |     Auglaize, OH     |        1        |
+| T411 |      Bryan, GA       |        1        |
+| T411 |      Boone, IA       |        1        |
+| T411 |     Lamoille, VT     |        1        |
+| T411 |    Chittenden, VT    |        1        |
+| T411 |     El Paso, TX      |        1        |
+| T411 |      Grimes, TX      |        1        |
+| T411 |     Sanpete, UT      |        1        |
+| T411 |      Pierce, WI      |        1        |
+| T411 |      Burke, NC       |        1        |
+| T411 |     Lincoln, NV      |        1        |
+| T411 |     Madison, KY      |        1        |
+| T411 |     Lincoln, LA      |        1        |
+| T411 |     Portage, OH      |        1        |
+| T411 |    Clearwater, ID    |        1        |
+| T411 |      Huron, MI       |        1        |
+| T411 |      Wilson, NC      |        1        |
+| T411 |       Bibb, GA       |        1        |
+| T411 |     Harrison, IA     |        1        |
+| T411 |       Kent, RI       |        1        |
+| T411 |      Pender, NC      |        1        |
+| T411 |     Mitchell, NC     |        1        |
+| T411 |      Citrus, FL      |        1        |
+| T411 |      Medina, TX      |        1        |
+| T411 |      Holmes, FL      |        1        |
+| T411 |     Lincoln, MO      |        1        |
+| T411 |      Greene, MO      |        1        |
+| T411 |    Craighead, AR     |        1        |
+| T411 |     Grenada, MS      |        1        |
+| T411 |      Posey, IN       |        1        |
+| T411 |   St. Bernard, LA    |        1        |
+| T411 |      Rogers, OK      |        1        |
+| T411 |     Baldwin, AL      |        1        |
+| T411 |      Clark, IN       |        1        |
+| T411 |     Hamilton, NE     |        1        |
+| T411 |      Jones, MS       |        1        |
+| T411 |    Churchill, NV     |        1        |
+| T411 |      Shelby, IA      |        1        |
+| T411 |      Ellis, KS       |        1        |
+| T411 |      Dawson, GA      |        1        |
+| T411 |      Dixon, NE       |        1        |
+| T411 |     Mitchell, IA     |        1        |
+| T411 |     Rockdale, GA     |        1        |
+| T411 |     Douglas, OR      |        1        |
+| T411 |      Wilkes, NC      |        1        |
+| T411 |      Stokes, NC      |        1        |
+| T411 |     Pulaski, AR      |        1        |
+| T411 |      Benton, WA      |        1        |
+| T411 |     San Juan, NM     |        1        |
+| T411 |      Butler, KS      |        1        |
+| T411 |   Charles City, VA   |        1        |
+| T411 |     Osceola, IA      |        1        |
+| T411 |      Oscoda, MI      |        1        |
+| T411 |    Jefferson, OH     |        1        |
+| T411 |       Wood, WI       |        1        |
+| T411 |    Terrebonne, LA    |        1        |
+| T411 |    Washington, LA    |        1        |
+| T411 |      Branch, MI      |        1        |
+| T411 |     Alamance, NC     |        1        |
+| T411 |   Chesterfield, VA   |        1        |
+| T411 |     Jackson, MS      |        1        |
+| T411 |     Johnson, TX      |        1        |
+| T411 |      Scott, MS       |        1        |
+| T411 |      Rankin, MS      |        1        |
+| T411 |       Lee, NC        |        1        |
+| T411 |      Jasper, MS      |        1        |
+| T411 |       Pope, MN       |        1        |
+| T411 |   Natchitoches, LA   |        1        |
+| T411 |       Bay, FL        |        1        |
+| T411 |      Benzie, MI      |        1        |

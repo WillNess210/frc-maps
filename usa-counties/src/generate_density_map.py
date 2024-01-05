@@ -57,8 +57,38 @@ for county_code, team_keys in county_code_to_team_keys_dict.items():
     rows.append([county.get_name(), len(team_keys)])
 rows.sort(key=lambda row: row[1], reverse=True)
 
+# calculate ranks
+rows_with_rank = []
+current_rank = 1
+for i in range(len(rows)):
+    i_county_count = rows[i]
+    # determine if we need to prepend T to the rank
+    prepend_t = False
+    tied_with_previous = False
+    if i > 0:
+        previous_county_count = rows[i - 1][1]
+        if i_county_count[1] == previous_county_count:
+            prepend_t = True
+            tied_with_previous = True
+    else:
+        next_county_count = rows[i + 1][1]
+        if i_county_count[1] == next_county_count:
+            prepend_t = True
+
+    if not prepend_t and i < len(rows) - 1:
+        next_county_count = rows[i + 1][1]
+        if i_county_count[1] == next_county_count:
+            prepend_t = True
+
+    if not tied_with_previous:
+        current_rank = i + 1
+    
+    i_rank = current_rank if not prepend_t else f'T{current_rank}'
+    new_row = [i_rank] + rows[i]
+    rows_with_rank.append(new_row)
+
 # prepend header row
-rows = [['County', 'Number of Teams']] + rows
+rows = [['Rank', 'County', 'Number of Teams']] + rows_with_rank
 # turn every row into strings
 rows = [[str(cell) for cell in row] for row in rows]
 
