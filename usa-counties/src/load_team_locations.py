@@ -1,4 +1,4 @@
-from location import CityDataset, ZipCodeDataset, CountyCodeFetcher
+from location import LocationFactory, CountyCodeFetcher
 from svg import CountyMap
 from environment import Environment
 from tba import TBA
@@ -11,13 +11,7 @@ env = Environment()
 TBA_KEY = env.get_tba_key()
 TBA = TBA(TBA_KEY, YEAR)
 
-us_cities_filepath = "../assets/uscities.csv"
-city_dataset = CityDataset(us_cities_filepath)
-
-zipcodes_filepath = "../assets/ZIP-COUNTY-FIPS_2017-06.csv"
-zipcode_dataset = ZipCodeDataset(zipcodes_filepath)
-
-county_code_fetcher = CountyCodeFetcher(city_dataset, zipcode_dataset)
+county_code_fetcher: CountyCodeFetcher = LocationFactory().get_county_code_fetcher()
 
 print(f'Fetching all teams from TBA for {YEAR}')
 teams = TBA.get_teams()
