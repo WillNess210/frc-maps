@@ -56,7 +56,7 @@ for i in range(len(rows)):
     rows_with_rank.append(new_row)
 
 # prepend header row
-rows = [['Rank', 'County', 'Number of Teams']] + rows_with_rank
+rows = [['Rank', 'County', 'Number of Events']] + rows_with_rank
 # turn every row into strings
 rows = [[str(cell) for cell in row] for row in rows]
 
