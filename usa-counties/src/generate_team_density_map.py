@@ -1,7 +1,8 @@
 import json
 from markdown_table_generator import generate_markdown, table_from_string_list, Alignment
-from typing import Dict, List
+from typing import Dict, List, Tuple
 from svg import CountyMap, generate_density_map, get_county_code_to_object_keys_dict
+from rank import calculate_rank
 
 YEAR = 2024
 output_prefix = f'output/density_map/{YEAR}'
@@ -17,43 +18,16 @@ county_code_to_team_keys_dict: Dict[str, List[str]] = get_county_code_to_object_
 generate_density_map(county_map, county_code_to_team_keys_dict)
 
 # Generate markdown table
-rows = []
+rows: List[Tuple[str, int]] = []
 for county_code, team_keys in county_code_to_team_keys_dict.items():
     county = county_map.get_county(county_code)
     if county is None:
         continue
     rows.append([county.get_name(), len(team_keys)])
-rows.sort(key=lambda row: row[1], reverse=True)
 
 # calculate ranks
-rows_with_rank = []
-current_rank = 1
-for i in range(len(rows)):
-    i_county_count = rows[i]
-    # determine if we need to prepend T to the rank
-    prepend_t = False
-    tied_with_previous = False
-    if i > 0:
-        previous_county_count = rows[i - 1][1]
-        if i_county_count[1] == previous_county_count:
-            prepend_t = True
-            tied_with_previous = True
-    else:
-        next_county_count = rows[i + 1][1]
-        if i_county_count[1] == next_county_count:
-            prepend_t = True
-
-    if not prepend_t and i < len(rows) - 1:
-        next_county_count = rows[i + 1][1]
-        if i_county_count[1] == next_county_count:
-            prepend_t = True
-
-    if not tied_with_previous:
-        current_rank = i + 1
-    
-    i_rank = current_rank if not prepend_t else f'T{current_rank}'
-    new_row = [i_rank] + rows[i]
-    rows_with_rank.append(new_row)
+rows_with_rank = calculate_rank(rows, lambda row: row[1], reverse=True)
+rows_with_rank = [[row.get_rank()] + row.get_data() for row in rows_with_rank]
 
 # prepend header row
 rows = [['Rank', 'County', 'Number of Teams']] + rows_with_rank
