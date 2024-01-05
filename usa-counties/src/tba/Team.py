@@ -28,4 +28,4 @@ class Team:
         return self.__country == USA_COUNTRY
     
     def __str__(self):
-        return self.__key + " (" + self.__city + ", " + self.__state + ", " + str(self.__zipcode) + ", " + self.__country + ")"
+        return self.__key + " Team(" + self.__city + ", " + self.__state + ", " + str(self.__zipcode) + ", " + self.__country + ")"

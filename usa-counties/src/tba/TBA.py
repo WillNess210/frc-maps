@@ -1,6 +1,7 @@
 import tbapy
 from typing import List
 from .Team import Team
+from .Event import Event
 
 class TBA:
     def __init__(self, tba_key, year):
@@ -11,3 +12,6 @@ class TBA:
         tba_teams = self.__tba.teams(year=self.__year)
         return [Team(tba_team) for tba_team in tba_teams]
     
+    def get_events(self):
+        tba_events = self.__tba.events(year=self.__year)
+        return [Event(tba_event) for tba_event in tba_events]
