@@ -4,7 +4,7 @@ The purpose of this project is to generate geographic data visualizations for th
 
 ## Scripts
 - `generate_random_colors.py`: a test script that interfaces with the County SVG code to ensure we can access each county, change its color + title
-- `generate_density_map.py`: generates a county map with colors corresponding to how many teams are in that county and titles for each county with team keys (prereq: output of `load_team_locations.py`). Also generates a markdown table.
+- `generate_team_density_map.py`: generates a county map with colors corresponding to how many teams are in that county and titles for each county with team keys (prereq: output of `load_team_locations.py`). Also generates a markdown table.
 - `load_team_locations.py`: generate a JSON file with a mapping from team key -> [county codes]
 - `generate_event_density_map.py`: generates a county map with colors corresponding to how many events are in that county and titles for each county with event keys (prereq: output of `load_event_locations.py`). Also generates a markdown table.
 - `load_event_locations.py`: generate a JSON file with a mapping from event key -> [county codes]
