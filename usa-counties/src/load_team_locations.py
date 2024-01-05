@@ -23,7 +23,7 @@ print(f'Fetching all teams from TBA for {YEAR}')
 teams = TBA.get_teams()
 team_key_to_county_codes: Dict[str, List[str]] = {}
 for team in teams:
-    if not team.is_usa_team():
+    if not team.is_in_usa():
         print("Skipping non-USA team: " + str(team))
         continue
     team_county_codes = county_code_fetcher.get_county_codes(team.get_city(), team.get_state(), team.get_zipcode())

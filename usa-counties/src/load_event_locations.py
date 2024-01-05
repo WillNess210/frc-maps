@@ -24,7 +24,7 @@ events = TBA.get_events()
 not_found_events = []
 event_key_to_county_codes: Dict[str, List[str]] = {}
 for event in events:
-    if not event.is_usa_event():
+    if not event.is_in_usa():
         print("Skipping non-USA event: " + str(event))
         continue
     event_county_codes = county_code_fetcher.get_county_codes(event.get_city(), event.get_state(), event.get_zipcode())
