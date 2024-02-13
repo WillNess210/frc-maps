@@ -15,8 +15,9 @@ note: you should be in the `usa-counties/src` directory to run these scripts
 1. Create a `.env` in the `usa-counties/src` folder that matches the `.env.example` template located in the same folder.
 2. As of now, you must be in the `usa-counties/src` directory to run commands (ex: `python3 ./generate_random_colors.py`)
  - Eventually I want to make this runnable from the main directory
-3. Create a conda environment with `conda create --name frc-maps --file requirements.txt`
-    - When you update the requirements, update the `requirements.txt` file with `conda list --export > requirements.txt`
+3. Create a conda environment with `conda create --name frc-maps --file environment.yml`
+    - use `conda env update --file environment.yml --prune` to update your environment based on the file
+    - update this file manually and then use this command to sync your environment
 4. Activate the conda environment with `conda activate frc-maps`
 
 ## Data Sources
