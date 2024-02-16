@@ -3,6 +3,7 @@ from typing import List, Callable, Dict, Optional
 from .County import County
 import os
 
+
 class CountyMap:
     def __init__(self, source_filepath, output_filepath):
         self.svg_root = etree.parse(source_filepath).getroot()
@@ -18,11 +19,11 @@ class CountyMap:
             for county in state:
                 county_obj = County(county)
                 counties.append(county_obj)
-                county_code_to_county_dict[county.attrib["id"][1:]] = county_obj
+                county_code_to_county_dict[county_obj.get_fips()] = county_obj
         self.counties = counties
         self.county_code_to_county_dict = county_code_to_county_dict
         return self.counties
-    
+
     def for_each_county(self, func: Callable[[County], None]):
         for county in self.__get_counties():
             func(county)

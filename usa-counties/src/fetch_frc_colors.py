@@ -23,4 +23,6 @@ tba_team_colors = FrcColors().get_frc_colors(tba_team_numbers)
 
 # dump file
 output_file_creator = OutputFileCreator()
-output_file_creator.json_dump(tba_team_colors, "output/frc-colors/frc-colors.json")
+output_file_creator.json_dump(
+    tba_team_colors, f"output/frc-colors/{YEAR}/frc-colors.json"
+)

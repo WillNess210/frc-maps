@@ -1,5 +1,4 @@
 from location import LocationFactory, CountyCodeFetcher
-from svg import CountyMap
 from environment import Environment
 from tba import TBA, build_location_object_key_to_county_codes_dict
 from files import OutputFileCreator
@@ -13,12 +12,18 @@ tba = TBA(TBA_KEY, YEAR)
 
 county_code_fetcher: CountyCodeFetcher = LocationFactory().get_county_code_fetcher()
 
-print(f'Fetching all teams from TBA for {YEAR}')
+print(f"Fetching all teams from TBA for {YEAR}")
 teams = tba.get_teams()
-team_key_to_county_codes: Dict[str, List[str]] = build_location_object_key_to_county_codes_dict(county_code_fetcher, teams)
+team_key_to_county_codes: Dict[str, List[str]] = (
+    build_location_object_key_to_county_codes_dict(county_code_fetcher, teams)
+)
 
 # Save the team_key_to_county_codes to a file
-team_key_to_county_codes_filepath = f'./output/team_locations/{YEAR}/team_key_to_county_codes.json'
+team_key_to_county_codes_filepath = (
+    f"./output/team_locations/{YEAR}/team_key_to_county_codes.json"
+)
 print("\nSaving team_key_to_county_codes to: " + team_key_to_county_codes_filepath)
 output_file_creator = OutputFileCreator()
-output_file_creator.json_dump(team_key_to_county_codes, team_key_to_county_codes_filepath)
+output_file_creator.json_dump(
+    team_key_to_county_codes, team_key_to_county_codes_filepath
+)

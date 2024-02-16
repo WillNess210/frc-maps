@@ -92,6 +92,7 @@ HARDCODED_CITIES: List[City] = [
     createCity("Bensalem", "Pennsylvania", "PA", "42017"),
     createCity("Horsham", "Pennsylvania", "PA", "42091"),
     createCity("N. Charleston", "South Carolina", "SC", "45019"),
+    createCity("Baker", "Florida", "FL", "12091"),
 ]
 
 class CityDataset:

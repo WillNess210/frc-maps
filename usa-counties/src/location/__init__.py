@@ -4,3 +4,8 @@ from .ZipCodeDataset import ZipCodeDataset
 from .ZipCode import ZipCode
 from .CountyCodeFetcher import CountyCodeFetcher
 from .LocationFactory import LocationFactory
+from .CountyLocation import CountyLocation
+from .CountyLocationDataset import CountyLocationDataset
+from .CountyDistance import CountyDistance
+from .CountyPair import CountyPair
+from .CountyDistanceDataset import CountyDistanceDataset
