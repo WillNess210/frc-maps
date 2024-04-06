@@ -10,6 +10,7 @@ note: you should be in the `usa-counties/src` directory to run these scripts
 - `generate_event_density_map.py`: generates a county map with colors corresponding to how many events are in that county and titles for each county with event keys (prereq: output of `load_event_locations.py`). Also generates a markdown table.
 - `load_event_locations.py`: generate a JSON file with a mapping from event key -> [county codes]
 - `fetch_frc_colors.py`: calls the TBA API to get all teams for a year, and then calls the frc-colors API to get primary colors for each team to generate a JSON file with a mapping from team key -> color
+- `generate_starting_ownership_file.py`: generates a JSON file with a mapping from county code -> [team keys] with the initial ownership of each county (based on closest teams owning each county)
 
 
 ## Setup
