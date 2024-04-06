@@ -2,14 +2,15 @@
 
 from environment import Environment
 from tba import TBA
-from files import OutputFileCreator, FilepathFactory
+from files import OutputFileCreator
 from frc_colors import FrcColors
+from config import CONFIG
 
 # script which calls endpoint multiple times then dumps the data to a JSON file
 BASE_URL = "https://api.frc-colors.com/v1/team"
 MAX_FRC_COLORS_PAGE_SIZE = 100
-YEAR = 2024
-filepaths = FilepathFactory(YEAR)
+YEAR = CONFIG.get_year()
+filepaths = CONFIG.get_filepaths()
 
 env = Environment()
 TBA_KEY = env.get_tba_key()

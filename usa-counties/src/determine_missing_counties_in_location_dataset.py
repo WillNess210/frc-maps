@@ -1,8 +1,8 @@
 from svg import CountyMap, County
 from location import CountyLocationDataset
-from files import FilepathFactory
+from config import CONFIG
 
-filepaths = FilepathFactory(2024)
+filepaths = CONFIG.get_filepaths()
 
 county_map = CountyMap(filepaths.get_usa_counties_svg_filepath(), "NA")
 

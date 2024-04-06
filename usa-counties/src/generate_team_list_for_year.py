@@ -1,11 +1,11 @@
 from tba import TBA
-from files import OutputFileCreator, FilepathFactory
+from files import OutputFileCreator
 from typing import Set
 from environment import Environment
+from config import CONFIG
 
-
-YEAR = 2024
-filepaths = FilepathFactory(YEAR)
+YEAR = CONFIG.get_year()
+filepaths = CONFIG.get_filepaths()
 
 env = Environment()
 TBA_KEY = env.get_tba_key()

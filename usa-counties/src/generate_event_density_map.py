@@ -2,10 +2,10 @@ import json
 from typing import Dict, List
 from svg import CountyMap, generate_density_map, get_county_code_to_object_keys_dict
 from rank import generate_ranked_county_table
-from files import FilepathFactory
+from config import CONFIG
 
-YEAR = 2024
-filepaths = FilepathFactory(YEAR)
+filepaths = CONFIG.get_filepaths()
+
 output_filepaths = filepaths.get_event_density_output_filepaths()
 event_key_to_county_codes_filepath = filepaths.get_event_key_to_county_codes_filepath()
 

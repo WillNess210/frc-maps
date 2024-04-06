@@ -1,13 +1,12 @@
-from svg import CountyMap, generate_density_map
+from svg import CountyMap
 from frc_colors import FrcColorDataset
 from colorhash import ColorHash
 import json
 from typing import Dict, List
-from files import FilepathFactory
+from config import CONFIG
 
+filepaths = CONFIG.get_filepaths()
 
-YEAR = 2024
-filepaths = FilepathFactory(YEAR)
 output_filepaths = filepaths.get_ownership_map_output_filepaths()
 starting_ownership_filepath = filepaths.get_starting_ownership_filepath()
 

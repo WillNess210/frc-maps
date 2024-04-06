@@ -2,9 +2,9 @@ from .LocationObject import LocationObject
 from location import CountyCodeFetcher
 from svg import CountyMap
 from typing import Dict, List
-from files import FilepathFactory
+from config import CONFIG
 
-filepaths = FilepathFactory(2024)
+filepaths = CONFIG.get_filepaths()
 
 
 def build_location_object_key_to_county_codes_dict(

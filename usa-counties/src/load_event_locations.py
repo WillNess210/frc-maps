@@ -1,11 +1,12 @@
 from location import LocationFactory, CountyCodeFetcher
 from environment import Environment
 from tba import TBA, build_location_object_key_to_county_codes_dict
-from files import OutputFileCreator, FilepathFactory
+from files import OutputFileCreator
 from typing import Dict, List
+from config import CONFIG
 
-YEAR = 2024
-filepaths = FilepathFactory(YEAR)
+YEAR = CONFIG.get_year()
+filepaths = CONFIG.get_filepaths()
 
 env = Environment()
 TBA_KEY = env.get_tba_key()

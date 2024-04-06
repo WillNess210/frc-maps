@@ -1,13 +1,13 @@
 from .CityDataset import CityDataset
 from .ZipCodeDataset import ZipCodeDataset
 from .CountyCodeFetcher import CountyCodeFetcher
-from files.FilepathFactory import FilepathFactory
 from typing import Tuple
+from config import CONFIG
 
 
 class LocationFactory:
     def __init__(self):
-        filepaths = FilepathFactory(2024)
+        filepaths = CONFIG.get_filepaths()
         self.__city_dataset = CityDataset(filepaths.get_us_cities_filepath())
         self.__zipcode_dataset = ZipCodeDataset(filepaths.get_zipcodes_filepath())
         self.__county_code_fetcher = CountyCodeFetcher(

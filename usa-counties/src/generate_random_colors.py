@@ -1,12 +1,11 @@
 from svg import CountyMap
 from random import randint
-from files import FilepathFactory
-
-filepaths = FilepathFactory(2024)
+from config import CONFIG
 
 # create a CountyMap object
 county_map = CountyMap(
-    filepaths.get_usa_counties_svg_filepath(), "output/random_colors/output.svg"
+    CONFIG.get_filepaths().get_usa_counties_svg_filepath(),
+    "output/random_colors/output.svg",
 )
 
 # set the fill of each county to a random color
