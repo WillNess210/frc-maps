@@ -1,11 +1,11 @@
 """Generate a file that contains the distance between each pair of counties in the USA."""
 
 from location import CountyLocationDataset, CountyPair
-from files import OutputFileCreator
+from files import OutputFileCreator, FilepathFactory
 from typing import Dict
 
-
-county_location_dataset_filepath = "../assets/counties_loc.csv"
+filepaths = FilepathFactory(2024)
+county_location_dataset_filepath = filepaths.get_county_location_dataset_filepath()
 
 county_location_dataset = CountyLocationDataset(county_location_dataset_filepath)
 
@@ -36,6 +36,5 @@ for i in range(number_of_counties):
 
 output_file_creator = OutputFileCreator()
 output_file_creator.json_dump(
-    county_code_to_distances,
-    "output/precomputed-county-distance/precomputed-county-distance.json",
+    county_code_to_distances, filepaths.get_precomputed_county_distance_filepath()
 )

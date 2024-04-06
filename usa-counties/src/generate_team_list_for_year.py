@@ -1,10 +1,11 @@
 from tba import TBA
-from files import OutputFileCreator
+from files import OutputFileCreator, FilepathFactory
 from typing import Set
 from environment import Environment
 
 
 YEAR = 2024
+filepaths = FilepathFactory(YEAR)
 
 env = Environment()
 TBA_KEY = env.get_tba_key()
@@ -19,4 +20,4 @@ for event in events:
 team_keys = list(sorted(team_keys))
 
 output_file_creator = OutputFileCreator()
-output_file_creator.json_dump(team_keys, f"./output/team_list/{YEAR}/team_keys.json")
+output_file_creator.json_dump(team_keys, filepaths.get_team_list_filepath())

@@ -1,10 +1,14 @@
 from svg import CountyMap, County
-from location import CountyLocationDataset2
+from location import CountyLocationDataset
+from files import FilepathFactory
 
-county_location_dataset_filepath = "../assets/counties_loc.csv"
-county_map = CountyMap("../assets/usa_counties.svg", "NA")
+filepaths = FilepathFactory(2024)
 
-county_location_dataset = CountyLocationDataset2(county_location_dataset_filepath)
+county_map = CountyMap(filepaths.get_usa_counties_svg_filepath(), "NA")
+
+county_location_dataset = CountyLocationDataset(
+    filepaths.get_county_location_dataset_filepath()
+)
 
 num_counties_missing = 0
 

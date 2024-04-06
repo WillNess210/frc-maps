@@ -2,20 +2,17 @@ import json
 from location import CountyLocationDataset, CountyDistanceDataset
 from svg import CountyMap, get_county_code_to_object_keys_dict, County
 from typing import Dict, List
-from files import OutputFileCreator
+from files import OutputFileCreator, FilepathFactory
 
 YEAR = 2024
+filepaths = FilepathFactory(YEAR)
 
-starting_ownership_filepath = f"./output/starting_ownership/{YEAR}/starting_ownership.json"
+starting_ownership_filepath = filepaths.get_starting_ownership_filepath()
 
-team_key_to_county_codes_filepath = (
-    f"./output/team_locations/{YEAR}/team_key_to_county_codes.json"
-)
-active_teams_for_year_filepath = f"./output/team_list/{YEAR}/team_keys.json"
-county_location_dataset_filepath = "../assets/counties_loc.csv"
-precomputed_county_distance_filepath = (
-    "./output/precomputed-county-distance/precomputed-county-distance.json"
-)
+team_key_to_county_codes_filepath = filepaths.get_team_key_to_county_codes_filepath()
+active_teams_for_year_filepath = filepaths.get_team_list_filepath()
+county_location_dataset_filepath = filepaths.get_county_location_dataset_filepath()
+precomputed_county_distance_filepath = filepaths.get_precomputed_county_distance_filepath()
 
 county_location_dataset = CountyLocationDataset(county_location_dataset_filepath)
 county_distance_dataset = CountyDistanceDataset(precomputed_county_distance_filepath)
@@ -24,7 +21,7 @@ county_distance_dataset = CountyDistanceDataset(precomputed_county_distance_file
 team_key_to_county_codes: Dict[str, List[str]] = {}
 with open(team_key_to_county_codes_filepath, "r") as f:
     team_key_to_county_codes = json.load(f)
-county_map = CountyMap("../assets/usa_counties.svg", "")
+county_map = CountyMap(filepaths.get_usa_counties_svg_filepath(), "")
 county_code_to_team_keys_dict: Dict[str, List[str]] = (
     get_county_code_to_object_keys_dict(team_key_to_county_codes)
 )

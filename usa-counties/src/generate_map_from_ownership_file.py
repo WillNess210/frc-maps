@@ -3,18 +3,20 @@ from frc_colors import FrcColorDataset
 from colorhash import ColorHash
 import json
 from typing import Dict, List
+from files import FilepathFactory
 
 
 YEAR = 2024
-starting_ownership_filepath = (
-    f"./output/starting_ownership/{YEAR}/starting_ownership.json"
-)
-output_prefix = f"output/ownership_map/{YEAR}"
-team_key_to_color_filepath = f"./output/frc-colors/{YEAR}/frc-colors.json"
+filepaths = FilepathFactory(YEAR)
+output_filepaths = filepaths.get_ownership_map_output_filepaths()
+starting_ownership_filepath = filepaths.get_starting_ownership_filepath()
 
+team_key_to_color_filepath = filepaths.get_team_key_to_frc_color_filepath()
 
 frc_color_dataset = FrcColorDataset(team_key_to_color_filepath)
-county_map = CountyMap("../assets/usa_counties.svg", f"{output_prefix}/output.svg")
+county_map = CountyMap(
+    filepaths.get_usa_counties_svg_filepath(), output_filepaths.get_map_output()
+)
 # load starting_ownership_filepath
 county_code_to_team_keys_dict: Dict[str, List[str]] = json.loads(
     open(starting_ownership_filepath).read()
