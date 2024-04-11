@@ -34,7 +34,6 @@ def __verify_every_teams_county_codes_are_in_county_map(
     location_object_key_to_county_codes,
 ):
     county_map = county_map = CountyMap(
-        filepaths.get_usa_counties_svg_filepath(),
         "if_this_file_exists_something_went_wrong.svg",
     )
     invalid_county_codes = []

@@ -14,9 +14,7 @@ event_key_to_county_codes: Dict[str, List[str]] = {}
 with open(event_key_to_county_codes_filepath, "r") as f:
     event_key_to_county_codes = json.load(f)
 
-county_map = CountyMap(
-    filepaths.get_usa_counties_svg_filepath(), output_filepaths.get_map_output()
-)
+county_map = CountyMap(output_filepaths.get_map_output())
 county_code_to_event_keys_dict: Dict[str, List[str]] = (
     get_county_code_to_object_keys_dict(event_key_to_county_codes)
 )

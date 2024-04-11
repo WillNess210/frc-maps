@@ -2,11 +2,14 @@ from lxml import etree
 from typing import List, Callable, Dict, Optional
 from .County import County
 import os
+from config import CONFIG
 
 
 class CountyMap:
-    def __init__(self, source_filepath, output_filepath):
-        self.svg_root = etree.parse(source_filepath).getroot()
+    def __init__(self, output_filepath: str):
+        self.svg_root = etree.parse(
+            CONFIG.get_filepaths().get_usa_counties_svg_filepath()
+        ).getroot()
         self.g_root = self.svg_root[2]
         self.output_filepath = output_filepath
 

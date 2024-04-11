@@ -13,9 +13,7 @@ starting_ownership_filepath = filepaths.get_starting_ownership_filepath()
 team_key_to_color_filepath = filepaths.get_team_key_to_frc_color_filepath()
 
 frc_color_dataset = FrcColorDataset(team_key_to_color_filepath)
-county_map = CountyMap(
-    filepaths.get_usa_counties_svg_filepath(), output_filepaths.get_map_output()
-)
+county_map = CountyMap(output_filepaths.get_map_output())
 # load starting_ownership_filepath
 county_code_to_team_keys_dict: Dict[str, List[str]] = json.loads(
     open(starting_ownership_filepath).read()
