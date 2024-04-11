@@ -4,7 +4,7 @@ from config import CONFIG
 
 filepaths = CONFIG.get_filepaths()
 
-county_map = CountyMap("NA")
+county_map = CountyMap()
 
 county_location_dataset = CountyLocationDataset(
     filepaths.get_county_location_dataset_filepath()

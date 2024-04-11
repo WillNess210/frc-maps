@@ -20,7 +20,7 @@ county_distance_dataset = CountyDistanceDataset(precomputed_county_distance_file
 team_key_to_county_codes: Dict[str, List[str]] = {}
 with open(team_key_to_county_codes_filepath, "r") as f:
     team_key_to_county_codes = json.load(f)
-county_map = CountyMap("")
+county_map = CountyMap()
 county_code_to_team_keys_dict: Dict[str, List[str]] = (
     get_county_code_to_object_keys_dict(team_key_to_county_codes)
 )

@@ -1,6 +1,10 @@
 import json
 from typing import Dict, List
-from svg import CountyMap, generate_density_map, get_county_code_to_object_keys_dict
+from svg import (
+    CountyMapWithOutput,
+    generate_density_map,
+    get_county_code_to_object_keys_dict,
+)
 from rank import generate_ranked_county_table
 from config import CONFIG
 
@@ -14,7 +18,7 @@ team_key_to_county_codes: Dict[str, List[str]] = {}
 with open(team_key_to_county_codes_filepath, "r") as f:
     team_key_to_county_codes = json.load(f)
 
-county_map = CountyMap(output_filepaths.get_map_output())
+county_map = CountyMapWithOutput(output_filepaths.get_map_output())
 county_code_to_team_keys_dict: Dict[str, List[str]] = (
     get_county_code_to_object_keys_dict(team_key_to_county_codes)
 )

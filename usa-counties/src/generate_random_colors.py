@@ -1,8 +1,8 @@
-from svg import CountyMap
+from svg import CountyMapWithOutput
 from random import randint
 
 # create a CountyMap object
-county_map = CountyMap(
+county_map = CountyMapWithOutput(
     "output/random_colors/output.svg",
 )
 

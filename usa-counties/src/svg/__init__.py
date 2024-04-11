@@ -1,4 +1,4 @@
-from .CountyMap import CountyMap
+from .CountyMap import CountyMap, CountyMapWithOutput
 from .County import County
 from .utils import (
     generate_density_map,

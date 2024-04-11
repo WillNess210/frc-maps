@@ -33,9 +33,7 @@ def build_location_object_key_to_county_codes_dict(
 def __verify_every_teams_county_codes_are_in_county_map(
     location_object_key_to_county_codes,
 ):
-    county_map = county_map = CountyMap(
-        "if_this_file_exists_something_went_wrong.svg",
-    )
+    county_map = county_map = CountyMap()
     invalid_county_codes = []
     for (
         location_object_key,

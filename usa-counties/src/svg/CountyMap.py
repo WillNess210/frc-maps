@@ -6,12 +6,11 @@ from config import CONFIG
 
 
 class CountyMap:
-    def __init__(self, output_filepath: str):
+    def __init__(self):
         self.svg_root = etree.parse(
             CONFIG.get_filepaths().get_usa_counties_svg_filepath()
         ).getroot()
         self.g_root = self.svg_root[2]
-        self.output_filepath = output_filepath
 
     def __get_counties(self):
         if hasattr(self, "counties"):
@@ -38,10 +37,21 @@ class CountyMap:
             return None
         return self.county_code_to_county_dict[county_code]
 
+    def set_output_filepath(self, output_filepath: str):
+        self.output_filepath = output_filepath
+
     def save_svg(self):
+        if self.output_filepath is None:
+            raise ValueError("output_filepath is not set")
         # create folder if necessary
         dir_name = os.path.dirname(self.output_filepath)
         os.makedirs(dir_name, exist_ok=True)
         with open(self.output_filepath, "wb") as f:
             f.write(etree.tostring(self.svg_root))
             print("Saved to " + self.output_filepath)
+
+
+class CountyMapWithOutput(CountyMap):
+    def __init__(self, output_filepath: str):
+        super().__init__()
+        self.set_output_filepath(output_filepath)
