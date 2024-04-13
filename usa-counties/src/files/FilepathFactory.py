@@ -1,7 +1,7 @@
 """A module to generate filepaths for the project."""
 
 import os
-from typing import Optional
+from typing import Optional, List
 from dataclasses import dataclass
 
 PROJECT_ROOT_DIRECTORY_NAME = "usa-counties"
@@ -145,8 +145,22 @@ class FilepathFactory:
             f"undefeated_ownership_week_{week}.json",
         )
 
-    def get_latest_undefeated_ownership_filepath(self) -> Optional[FilepathWithWeek]:
-        """Get the path to the latest undefeated ownership file"""
+    def get_undefeated_map_filepath(self, week: int) -> MapAndTableOutputFilepaths:
+        """Get the path to the undefeated map file"""
+        return MapAndTableOutputFilepaths(
+            self.__get_path_to(
+                "src",
+                "output",
+                "undefeated_ownership",
+                self.year,
+                f"map_week_{week}",
+            )
+        )
+
+    def get_undefeated_ownership_filepaths_in_order(
+        self,
+    ) -> Optional[List[FilepathWithWeek]]:
+        """Get the paths to the undefeated ownership files"""
         parent_folder = self.__get_path_to(
             "src",
             "output",
@@ -155,6 +169,22 @@ class FilepathFactory:
         )
         files = os.listdir(parent_folder)
         filenames = [f for f in files if f.startswith("undefeated_ownership_week_")]
+        if not filenames or len(filenames) == 0:
+            return None
+        filenames.sort()
+        return [
+            FilepathWithWeek(
+                self.get_undefeated_ownership_filepath(
+                    int(f.split("_")[-1].split(".")[0])
+                ),
+                int(f.split("_")[-1].split(".")[0]),
+            )
+            for f in filenames
+        ]
+
+    def get_latest_undefeated_ownership_filepath(self) -> Optional[FilepathWithWeek]:
+        """Get the path to the latest undefeated ownership file"""
+        filenames = self.get_undefeated_ownership_filepaths_in_order()
         if not filenames or len(filenames) == 0:
             return None
         max_week_in_filenames = max(
