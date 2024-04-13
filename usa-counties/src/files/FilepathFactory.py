@@ -1,8 +1,16 @@
 """A module to generate filepaths for the project."""
 
 import os
+from typing import Optional
+from dataclasses import dataclass
 
 PROJECT_ROOT_DIRECTORY_NAME = "usa-counties"
+
+
+@dataclass
+class FilepathWithWeek:
+    filepath: str
+    week: int
 
 
 class MapAndTableOutputFilepaths:
@@ -136,3 +144,21 @@ class FilepathFactory:
             self.year,
             f"undefeated_ownership_week_{week}.json",
         )
+
+    def get_latest_undefeated_ownership_filepath(self) -> Optional[FilepathWithWeek]:
+        """Get the path to the latest undefeated ownership file"""
+        parent_folder = self.__get_path_to(
+            "src",
+            "output",
+            "undefeated_ownership",
+            self.year,
+        )
+        files = os.listdir(parent_folder)
+        filenames = [f for f in files if f.startswith("undefeated_ownership_week_")]
+        if not filenames or len(filenames) == 0:
+            return None
+        max_week_in_filenames = max(
+            [int(f.split("_")[-1].split(".")[0]) for f in filenames]
+        )
+        filepath = self.get_undefeated_ownership_filepath(max_week_in_filenames)
+        return FilepathWithWeek(filepath, max_week_in_filenames)

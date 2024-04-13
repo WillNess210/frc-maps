@@ -14,9 +14,32 @@ tba = TBA(TBA_KEY, YEAR)
 
 WEEK_TO_PROCESS = 6
 
-# load starting_ownership_filepath
+# load ownership filepath
+latest_undefeated_ownership_filepath_with_week = (
+    filepaths.get_latest_undefeated_ownership_filepath()
+)
+
+if (
+    latest_undefeated_ownership_filepath_with_week is not None
+    and latest_undefeated_ownership_filepath_with_week.week >= WEEK_TO_PROCESS
+):
+    print("Latest undefeated ownership file is up to date")
+    exit()
+
+STARTING_WEEK_TO_PROCESS = (
+    latest_undefeated_ownership_filepath_with_week.week
+    if latest_undefeated_ownership_filepath_with_week is not None
+    else 0
+)
+
+starting_undefeated_ownership_filepath = (
+    latest_undefeated_ownership_filepath_with_week.filepath
+    if latest_undefeated_ownership_filepath_with_week is not None
+    else filepaths.get_starting_ownership_filepath()
+)
+print("Loading starting ownership from", starting_undefeated_ownership_filepath)
 county_code_to_team_keys_dict: Dict[str, List[str]] = json.loads(
-    open(filepaths.get_starting_ownership_filepath()).read()
+    open(starting_undefeated_ownership_filepath).read()
 )
 
 # generate team key -> county codes dict
@@ -29,7 +52,13 @@ for county_code, team_keys in county_code_to_team_keys_dict.items():
 
 print(f"Fetching all events from TBA for {YEAR}")
 events = tba.get_events()
-events = list(filter(lambda event: event.get_week() <= WEEK_TO_PROCESS, events))
+events = list(
+    filter(
+        lambda event: event.get_week() > STARTING_WEEK_TO_PROCESS
+        and event.get_week() <= WEEK_TO_PROCESS,
+        events,
+    )
+)
 print(f"Found {len(events)} events to process")
 
 
