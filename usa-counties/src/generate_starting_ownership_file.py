@@ -3,6 +3,7 @@ from location import CountyLocationDataset, CountyDistanceDataset
 from svg import CountyMap, get_county_code_to_object_keys_dict, County
 from typing import Dict, List
 from files import OutputFileCreator
+from config import CONFIG
 
 filepaths = CONFIG.get_filepaths()
 

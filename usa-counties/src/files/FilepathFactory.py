@@ -126,3 +126,13 @@ class FilepathFactory:
             "precomputed-county-distance",
             "precomputed-county-distance.json",
         )
+
+    def get_undefeated_ownership_filepath(self, week: int) -> str:
+        """Get the path to the undefeated ownership file"""
+        return self.__get_path_to(
+            "src",
+            "output",
+            "undefeated_ownership",
+            self.year,
+            f"undefeated_ownership_week_{week}.json",
+        )

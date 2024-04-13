@@ -12,6 +12,7 @@ note: you should be in the `usa-counties` directory (or sub-directory) to run th
 - `fetch_frc_colors.py`: calls the TBA API to get all teams for a year, and then calls the frc-colors API to get primary colors for each team to generate a JSON file with a mapping from team key -> color
 - `generate_starting_ownership_file.py`: generates a JSON file with a mapping from county code -> [team keys] with the initial ownership of each county (based on closest teams owning each county)
 - `generate_map_from_ownership_file.py`: generates a county map with colors corresponding to the ownership of each county and titles for each county with team keys (prereq: output of `generate_starting_ownership_file.py`).
+- `generate_undefeated_ownership_file.py`: generates a JSON file that consumes the starting ownership file and pulls match data for weeks of the season to generate a new ownership file based on who has won/lost their matches
 
 ## Setup
 1. Create a `.env` in the `usa-counties/src` folder that matches the `.env.example` template located in the same folder.
