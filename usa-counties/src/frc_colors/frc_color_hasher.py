@@ -19,6 +19,8 @@ class FrcColorHasher:
         return ColorHash(team_key).hex
 
     def get_color_for_teams(self, team_keys: List[str]) -> str:
+        if len(team_keys) == 0:
+            return "#ffffff"
         if len(team_keys) == 1:
             return self.get_color_for_team(team_keys[0])
         return ColorHash(",".join(team_keys)).hex
