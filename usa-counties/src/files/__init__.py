@@ -1,2 +1,2 @@
 from .OutputFileCreator import OutputFileCreator
-from .FilepathFactory import FilepathFactory
+from .FilepathFactory import FilepathFactory, MapAndTableOutputFilepaths
