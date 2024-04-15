@@ -135,12 +135,22 @@ class FilepathFactory:
             "precomputed-county-distance.json",
         )
 
-    def get_undefeated_ownership_filepath(self, week: int) -> str:
-        """Get the path to the undefeated ownership file"""
+    def get_undefeated_filepath(self, week: int) -> str:
+        """Get the path to the undefeated file for a given week"""
         return self.__get_path_to(
             "src",
             "output",
-            "undefeated_ownership",
+            "undefeated",
+            self.year,
+            f"undefeated_week_{week}.json",
+        )
+
+    def get_undefeated_ownership_filepath(self, week: int) -> str:
+        """Get the path to the undefeated ownership file for a given week"""
+        return self.__get_path_to(
+            "src",
+            "output",
+            "undefeated",
             self.year,
             f"undefeated_ownership_week_{week}.json",
         )
@@ -151,44 +161,38 @@ class FilepathFactory:
             self.__get_path_to(
                 "src",
                 "output",
-                "undefeated_ownership",
+                "undefeated",
                 self.year,
                 f"map_week_{week}",
             )
         )
 
-    def get_undefeated_ownership_filepaths_in_order(
+    def get_undefeated_filepaths_in_order(
         self,
     ) -> Optional[List[FilepathWithWeek]]:
-        """Get the paths to the undefeated ownership files"""
+        """Get the paths to the undefeated files"""
         parent_folder = self.__get_path_to(
             "src",
             "output",
-            "undefeated_ownership",
+            "undefeated",
             self.year,
         )
         files = os.listdir(parent_folder)
-        filenames = [f for f in files if f.startswith("undefeated_ownership_week_")]
+        filenames = [f for f in files if f.startswith("undefeated_week_")]
         if not filenames or len(filenames) == 0:
             return None
         filenames.sort()
         return [
             FilepathWithWeek(
-                self.get_undefeated_ownership_filepath(
-                    int(f.split("_")[-1].split(".")[0])
-                ),
+                self.get_undefeated_filepath(int(f.split("_")[-1].split(".")[0])),
                 int(f.split("_")[-1].split(".")[0]),
             )
             for f in filenames
         ]
 
-    def get_latest_undefeated_ownership_filepath(self) -> Optional[FilepathWithWeek]:
+    def get_latest_undefeated_filepath(self) -> Optional[FilepathWithWeek]:
         """Get the path to the latest undefeated ownership file"""
-        filenames = self.get_undefeated_ownership_filepaths_in_order()
+        filenames = self.get_undefeated_filepaths_in_order()
         if not filenames or len(filenames) == 0:
             return None
-        max_week_in_filenames = max(
-            [int(f.split("_")[-1].split(".")[0]) for f in filenames]
-        )
-        filepath = self.get_undefeated_ownership_filepath(max_week_in_filenames)
-        return FilepathWithWeek(filepath, max_week_in_filenames)
+        return filenames[-1]

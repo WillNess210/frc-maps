@@ -4,7 +4,10 @@ from .CountyDistanceDataset import CountyDistanceDataset
 from typing import Dict, List
 
 filepaths = CONFIG.get_filepaths()
-county_distance_dataset = CountyDistanceDataset(filepaths.get_precomputed_county_distance_filepath())
+county_distance_dataset = CountyDistanceDataset(
+    filepaths.get_precomputed_county_distance_filepath()
+)
+
 
 def process_county(county_code_to_team_keys_dict: Dict[str, List[str]], county: County):
     if (
@@ -22,18 +25,12 @@ def process_county(county_code_to_team_keys_dict: Dict[str, List[str]], county: 
         if closest_county_teams is not None and len(closest_county_teams) > 0:
             county_code_to_team_keys_dict[county.get_fips()] = closest_county_teams
             return
-    print("No nearby counties with teams found for county code", county.get_fips())
-    print(
-        "Closest counties:",
-        ",".join([f"{c.get_county_fips()}({"NA" if c.get_county_fips() not in county_code_to_team_keys_dict else len(county_code_to_team_keys_dict[c.get_fips()])})" for c in closest_counties]),
-    )
-    raise ValueError(
-        f"No nearby counties with teams found for county code {county.get_fips()}"
-    )
 
 
 def expand_teams_into_empty_counties(
-        county_code_to_team_keys_dict: Dict[str, List[str]]
+    county_code_to_team_keys_dict: Dict[str, List[str]]
 ):
     county_map = CountyMap()
-    county_map.for_each_county(lambda county: process_county(county_code_to_team_keys_dict, county))
+    county_map.for_each_county(
+        lambda county: process_county(county_code_to_team_keys_dict, county)
+    )
