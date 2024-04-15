@@ -6,19 +6,15 @@ from svg import get_county_code_to_object_keys_dict
 from typing import Dict, List, Set
 from files import OutputFileCreator
 from config import CONFIG
+from teams import ActiveTeamsFactory
 
 filepaths = CONFIG.get_filepaths()
 
 starting_ownership_filepath = filepaths.get_starting_ownership_filepath()
-
 team_key_to_county_codes_filepath = filepaths.get_team_key_to_county_codes_filepath()
-active_teams_for_year_filepath = filepaths.get_team_list_filepath()
-
 
 # get active teams
-active_teams: Set[str] = set()
-with open(active_teams_for_year_filepath, "r") as f:
-    active_teams = set(json.load(f))
+active_teams: Set[str] = ActiveTeamsFactory().get_active_teams()
 
 # Load the team_key_to_county_codes from a file
 # and filter out inactive teams
